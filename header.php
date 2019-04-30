@@ -45,3 +45,13 @@
 
 <body>
 
+<header>
+    <div class="am-g am-g-fixed am-g-collapse">
+        <div class="am-u-lg-2">
+            <div class="logo"></div>
+        </div>
+        <div class="am-u-lg-10">
+            <div class="menu"></div>
+        </div>
+    </div>
+</header>
