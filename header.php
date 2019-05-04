@@ -33,14 +33,18 @@
     <meta name="msapplication-TileColor" content="#0e90d2">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="icon.png">
 
-    <link rel="stylesheet" href="css/amazeui.flat.min.css">
-    <link rel="stylesheet" href="css/amazeui.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="<?php get_template_directory_uri() . '/css/amazeui.flat.min.css'; ?>">
+    <link rel="stylesheet" href="<?php get_template_directory_uri() . '/css/amazeui.min.css'; ?>">
+    <link rel="stylesheet" href="<?php get_template_directory_uri() . '/style.css'; ?>
 
     <meta name="theme-color" content="#fafafa">
+
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
+
 </head>
 
 <body>
@@ -51,7 +55,14 @@
             <div class="logo"></div>
         </div>
         <div class="am-u-lg-10">
-            <div class="menu"></div>
+            <div class="menu">
+                <?php
+                ob_start();
+                wp_nav_menu(array(
+                    'walker' => new HeaderMenu(), 'container' => false, 'theme_location' => 'header-menu', 'items_wrap' => '<ul class="header_pic_menu">%3$s</ul>'
+                ));
+                ?>
+            </div>
         </div>
     </div>
 </header>
