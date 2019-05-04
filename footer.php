@@ -15,7 +15,18 @@
 
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
+<footer>
+    <div class="am-g am-g-fixed am-g-collapse">
+        <div class="am-u-lg-4">
+            <div class="logo"></div>
+        </div>
+        <div class="am-u-lg-4">
+            <div class="logo"></div>
+        </div>
+        <div class="am-u-lg-4">
+            <div class="logo"></div>
+        </div>
+    </div>
+</footer>
 </body>
-
 </html>
