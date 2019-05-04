@@ -37,8 +37,9 @@
     <!--    <link rel="apple-touch-icon" href="icon.png">-->
 
 
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/amazeui.flat.min.css'; ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/amazeui.min.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap-grid.min.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap-reboot.min.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
@@ -48,17 +49,19 @@
 <body>
 
 <header>
-    <div class="am-g am-g-fixed am-g-collapse">
-        <div class="am-u-lg-2">
-            <div class="logo"></div>
-        </div>
-        <div class="am-u-lg-10">
-            <div class="header-menu">
-                <?php ob_start();
-                wp_nav_menu(array(
-                    'container' => false, 'theme_location' => 'header-menu', 'items_wrap' => '<ul class="header-menu-items">%3$s</ul>'
-                ));
-                ?>
+    <div class="container p-0">
+        <div class="row no-gutters">
+            <div class="col-xl-2">
+                <div class="logo"></div>
+            </div>
+            <div class="col-xl-10">
+                <div class="header-menu">
+                    <?php ob_start();
+                    wp_nav_menu(array(
+                        'container' => false, 'theme_location' => 'header-menu', 'items_wrap' => '<ul class="header-menu-items">%3$s</ul>'
+                    ));
+                    ?>
+                </div>
             </div>
         </div>
     </div>

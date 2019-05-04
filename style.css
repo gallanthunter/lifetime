@@ -12,7 +12,7 @@ Tags:
 */
 
 body {
-    font: 1.6rem/1.4 Georgia, Serif;
+    font: 14px/1.4 Georgia, Serif;
     font-family: 微软雅黑, Arial, Helvetica, sans-serif;
     height: 100%;
     position: relative;
@@ -22,15 +22,20 @@ body {
 
 /*header 样式开始*/
 header {
+    margin: 10px 0;
     border-bottom: solid 1px #ececec;
     background-color: #FFFFFF;
-    font-size: 1.6rem;
+    /*font-size: 14px;*/
     font-weight: bold;
-    color: #3c3c3c;
+    /*color: #3c3c3c;*/
 }
 
 .header-menu {
-    margin: 0 20px 0 20px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin: 10px 0 0 0;
 }
 
 /*header 样式结束*/
@@ -43,6 +48,7 @@ header {
     margin: 0 auto;
     display: block;
     text-align: left;
+
 }
 
 .header-menu-items li {
@@ -54,6 +60,8 @@ header {
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
     border-bottom: 3px solid #fff;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .header-menu-items li.current-menu-item, .header-menu-items li:hover {
@@ -105,7 +113,7 @@ article p {
     display: block;
     height: auto;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     padding: 10px 0;
     color: #333;
@@ -165,7 +173,6 @@ article p {
     line-height: 32px;
     padding: 5px 5%;
     margin-bottom: 10px;
-    background: #F6F6F6;
     cursor: pointer;
 }
 
