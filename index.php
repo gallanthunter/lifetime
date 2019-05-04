@@ -19,25 +19,21 @@
 
     <div class="am-u-sm-12 am-u-md-8 am-u-lg-8">
         <div class="article-list">
-            <div class="article">
-                <div class="am-u-lg-12">
-                    <div class="articile-icon"></div>
-                    <div class="article-title"></div>
-                    <div class="article-category"></div>
-                    <div class="article-author"></div>
-                    <div class="article-publish-time"></div>
-                </div>
-                <div class="am-u-lg-12">
-                    <div class="am-article-divider"></div>
-                </div>
-                <div class="am-u-lg-12">
-                    <div class="article-pic"></div>
-                    <div class="article-lead"></div>
-                </div>
-            </div>
+            <?php
+            $sticky = get_option('sticky_posts');
+            $paged  = (get_query_var('paged')) ? get_query_var('paged') : 1;
+            $posts  = array('paged' => $paged, 'post_status' => 'publish', 'post__not_in' => $sticky,);
+            query_posts($posts);
+            while (have_posts()): the_post();
+                // $category = get_the_category($post->ID);
+                get_template_part('template-parts/content/content');
+            endwhile;
+            wp_reset_query(); ?>
         </div>
     </div>
-    <div class="am-u-sm-12 am-u-md-4 am-u-lg-4">sidebar</div>
+    <div class="am-u-sm-12 am-u-md-4 am-u-lg-4">
+        <?php get_template_part('sidebar'); ?>
+    </div>
 </div>
 
 

@@ -7,8 +7,10 @@
 ob_start();
 if (!defined("THEME_INC_PATH"))
     define("THEME_INC_PATH", dirname(__FILE__) . "/inc");
-include_once(THEME_INC_PATH . "/init-css.php");
-include_once(THEME_INC_PATH . "/init-js.php");
+// include_once(THEME_INC_PATH . "/init-css.php");
+// include_once(THEME_INC_PATH . "/init-js.php");
+include_once(THEME_INC_PATH . "/HeaderMenu.php");
+
 // 移除head多余的link信息
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');

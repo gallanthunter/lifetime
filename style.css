@@ -11,4 +11,166 @@ Text Domain: lifetime
 Tags:
 */
 
+body {
+    font: 1.6rem/1.4 Georgia, Serif;
+    font-family: 微软雅黑, Arial, Helvetica, sans-serif;
+    height: 100%;
+    position: relative;
+    display: block;
+}
 
+
+/*header 样式开始*/
+header {
+    border-bottom: solid 1px #ececec;
+    background-color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+.header-menu {
+    margin: 0 20px 0 20px;
+}
+
+/*header 样式结束*/
+
+/* wordpress nav 自动生成代码开始 */
+.header-menu-items {
+    width: 100%;
+    padding: 0 1%;
+    /*max-width: 1180px;*/
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+}
+
+.header-menu-items li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 5px;
+    transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    border-bottom: 3px solid #fff;
+}
+
+.header-menu-items li.current-menu-item, .header-menu-items li:hover {
+    border-bottom: solid 3px #7f8c8d;
+}
+
+/* wordpress nav 自动生成代码结束 */
+
+
+/* article 样式开始 */
+article {
+    height: auto;
+    padding: 15px 10px;
+    margin: 20px 0;
+    background: #fff;
+    text-align: left;
+    /*font-size: 12px;*/
+    /*color: #666666;*/
+    overflow: hidden;
+}
+
+article hr { /*透明渐变水平线*/
+    width: 80%;
+    height: 1px;
+    margin: 20px auto;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+article li {
+    height: auto;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+
+article a {
+    display: inline-block;
+    font-size: 12px;
+    background-repeat: no-repeat;
+}
+
+article p {
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 200%;
+}
+
+.article-title {
+    display: block;
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.article-title .nopadding {
+    display: none;
+}
+
+.article-cat {
+    color: #8e8e8e;
+    /*padding: 0 0 0 15px;*/
+    /*margin-right: 25px;*/
+}
+
+.article-author {
+    color: #8e8e8e;
+    /*padding: 0 0 0 15px;*/
+}
+
+
+.article-content {
+    height: auto;
+    margin: 20px 0;
+    padding: 20px 2.5% 10px 2.5%;
+    display: block;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+.article-excerpt {
+    height: auto;
+    padding: 0 2.5% 0 2.5%;
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    margin: 20px 0;
+    color: #666;
+}
+
+.article-excerpt p.index_p_d:first-letter {
+    color: #333;
+    font-weight: normal;
+}
+
+.article-more {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    color: #ffba00;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 5px 5%;
+    margin-bottom: 10px;
+    background: #F6F6F6;
+    cursor: pointer;
+}
+
+.article-more span {
+    color: #666;
+}
+
+/* article 样式结束*/
