@@ -32,7 +32,7 @@
     <!--    <meta name="msapplication-TileImage" content="img/icon/app-icon72x72@2x.png">-->
     <meta name="msapplication-TileColor" content="#0e90d2">
 
-    <link rel="manifest" href="site.webmanifest">
+    <!--    <link rel="manifest" href="site.webmanifest">-->
     <!-- Place favicon.ico in the root directory -->
     <!--    <link rel="apple-touch-icon" href="icon.png">-->
 
