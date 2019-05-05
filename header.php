@@ -38,8 +38,6 @@
 
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css'; ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap-grid.min.css'; ?>">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap-reboot.min.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>

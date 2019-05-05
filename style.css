@@ -17,6 +17,7 @@ body {
     height: 100%;
     position: relative;
     display: block;
+    background: #f7f7f7;
 }
 
 img {
@@ -35,7 +36,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #000;
+    color: #17a2b8;
 }
 
 /*header 样式开始*/
@@ -43,9 +44,6 @@ header {
     margin: 10px 0;
     border-bottom: solid 1px #ececec;
     background-color: #FFFFFF;
-    /*font-size: 14px;*/
-    /*font-weight: bold;*/
-    /*color: #3c3c3c;*/
 }
 
 .header-menu {
@@ -62,7 +60,6 @@ header {
 .header-menu-items {
     width: 100%;
     padding: 0 1%;
-    /*max-width: 1180px;*/
     margin: 0 auto;
     display: block;
     text-align: left;
@@ -81,7 +78,6 @@ header {
     font-size: larger;
     font-weight: bold;
     color: #333333;
-    text-decoration: none;
 }
 
 .header-menu-items li.current-menu-item, .header-menu-items li:hover {
@@ -99,8 +95,6 @@ article {
     margin: 20px 0;
     background: #fff;
     text-align: left;
-    /*font-size: 12px;*/
-    /*color: #666666;*/
     overflow: hidden;
 }
 
@@ -131,31 +125,44 @@ article p {
 }
 
 .article-title {
-    display: block;
     height: auto;
-    font-size: larger;
+    padding: 15px;
     text-align: left;
-    text-decoration: none;
-    padding: 10px 0;
-    color: #333;
+    font-size: larger;
     font-weight: bold;
 }
 
-.article-title .nopadding {
-    display: none;
+.article-meta {
+    display: inline-block;
 }
 
-.article-cat {
-    color: #8e8e8e;
-    /*padding: 0 0 0 15px;*/
-    /*margin-right: 25px;*/
+.article-category {
+    padding: 0 0 0 15px;
+    margin-right: 25px;
 }
 
 .article-author {
-    color: #8e8e8e;
-    /*padding: 0 0 0 15px;*/
+    padding: 0 0 0 15px;
+    margin-right: 25px;
 }
 
+.article-publish-time {
+    padding: 0 0 0 15px;
+    margin-right: 25px;
+}
+
+.article-more {
+    padding: 0 0 0 15px;
+    margin-right: 25px;
+}
+
+.article-lead {
+    padding: 0 2.5% 0 2.5%;
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    margin: 20px 0;
+}
 
 .article-content {
     height: auto;
@@ -164,41 +171,17 @@ article p {
     display: block;
     text-align: left;
     text-indent: 2em;
-    line-height: 25px;
     font-size: 14px;
-}
-
-
-.article-excerpt {
-    height: auto;
-    padding: 0 2.5% 0 2.5%;
-    text-align: left;
-    display: block;
-    font-size: 14px;
-    margin: 20px 0;
-    color: #666;
-}
-
-.article-excerpt p.index_p_d:first-letter {
-    color: #333;
-    font-weight: normal;
-}
-
-.article-more {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    display: block;
-    color: #ffba00;
-    font-size: 12px;
-    line-height: 32px;
-    padding: 5px 5%;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.article-more span {
-    color: #666;
 }
 
 /* article 样式结束*/
+
+footer {
+    background: #333333;
+    border-top: #00C1DE 10px solid;
+    color: #777777;
+}
+
+.footer-links {
+    color: #777777;
+}

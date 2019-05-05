@@ -17,11 +17,6 @@
 <footer>
     <div class="container p-0">
         <div class="row no-gutters">
-            <div class="col-12">
-
-            </div>
-        </div>
-        <div class="row no-gutters">
             <div class="col-4">
                 <h3>链接</h3>
                 <?php wp_nav_menu(array('theme_location' => 'footer-menu', 'menu_class' => 'footer-links')); ?>
