@@ -137,21 +137,25 @@ article p {
 }
 
 .article-category {
+    display: inline-block;
     padding: 0 0 0 15px;
     margin-right: 25px;
 }
 
 .article-author {
+    display: inline-block;
     padding: 0 0 0 15px;
     margin-right: 25px;
 }
 
 .article-publish-time {
+    display: inline-block;
     padding: 0 0 0 15px;
     margin-right: 25px;
 }
 
 .article-more {
+    display: inline-block;
     padding: 0 0 0 15px;
     margin-right: 25px;
 }
