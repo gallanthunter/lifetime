@@ -38,6 +38,7 @@
 
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/open-iconic-bootstrap.min.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
@@ -53,7 +54,7 @@
                 <div class="logo"></div>
             </div>
             <div class="col-xl-10">
-                <div class="header-menu">
+                <div class="header-menu font-weight-bold">
                     <?php ob_start();
                     wp_nav_menu(array(
                         'container' => false, 'theme_location' => 'header-menu', 'items_wrap' => '<ul class="header-menu-items">%3$s</ul>'

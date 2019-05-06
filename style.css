@@ -21,7 +21,7 @@ body {
 }
 
 img {
-    border: 0;
+    border: none;
     display: block
 }
 
@@ -76,7 +76,7 @@ header {
     -o-transition: all 0.8s;
     border-bottom: 3px solid #fff;
     font-size: larger;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #333333;
 }
 
@@ -106,62 +106,44 @@ article hr { /*透明渐变水平线*/
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-article li {
-    height: auto;
-    padding: 15px 10px;
-    overflow: hidden;
-}
-
-article a {
-    display: inline-block;
-    font-size: 12px;
-    background-repeat: no-repeat;
-}
-
-article p {
-    font-size: 14px;
-    text-indent: 2em;
-    line-height: 200%;
-}
-
 .article-title {
-    height: auto;
-    padding: 15px;
+    padding: 10px 15px;
     text-align: left;
     font-size: larger;
-    font-weight: bold;
 }
 
 .article-meta {
     display: inline-block;
+    margin: 10px 0px;
+    vertical-align: middle;
+    font-size: small;
 }
 
 .article-category {
     display: inline-block;
-    padding: 0 0 0 15px;
-    margin-right: 25px;
+    padding: 0 15px;
+    /*background: url("/images/svg/list-rich.svg") no-repeat left center;*/
 }
 
 .article-author {
     display: inline-block;
-    padding: 0 0 0 15px;
-    margin-right: 25px;
+    padding: 0 15px;
+    /*vertical-align: middle;*/
 }
 
 .article-publish-time {
     display: inline-block;
-    padding: 0 0 0 15px;
-    margin-right: 25px;
+    padding: 0 15px;
 }
 
 .article-more {
     display: inline-block;
-    padding: 0 0 0 15px;
-    margin-right: 25px;
+    margin: 10px 0px;
+    font-size: small;
 }
 
 .article-lead {
-    padding: 0 2.5% 0 2.5%;
+    padding: 0 0 0 15px;
     text-align: left;
     display: block;
     font-size: 14px;
@@ -183,7 +165,12 @@ article p {
 footer {
     background: #333333;
     border-top: #00C1DE 10px solid;
+    border-image: -webkit-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
+    border-image: -moz-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
+    border-image: linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
     color: #777777;
+
+
 }
 
 .footer-links {
