@@ -170,11 +170,30 @@ footer {
     border-image: -webkit-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
     border-image: -moz-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
     border-image: linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
+    font-size: 14px;
     color: #777777;
+}
 
+footer a {
+    color: #777777;
+}
 
+footer a:hover {
+    color: #777777;
 }
 
 .footer-links {
+    margin: 10px 0;
     color: #777777;
+}
+
+.footer-contact-us {
+    margin: 10px 0;
+    color: #777777;
+}
+
+.footer-copyright {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
 }

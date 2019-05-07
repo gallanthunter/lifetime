@@ -17,27 +17,25 @@
 <footer>
     <div class="container p-0">
         <div class="row no-gutters">
-            <div class="col-4">
+            <div class="col-4 footer-links">
                 <h3>链接</h3>
                 <?php wp_nav_menu(array('theme_location' => 'footer-menu', 'menu_class' => 'footer-links')); ?>
             </div>
 
-            <div class="col-4">
-                <h3>联系我们</h3>
-                <ul>
-                    <li>电话：</li>
-                    <li>Email: gallanthunter@163.com</li>
-                </ul>
-            </div>
+            <div class="col-8 footer-contact-us">
+                <div class="footer-contact-info">
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li>电话：</li>
+                        <li>Email: gallanthunter@163.com</li>
+                    </ul>
+                </div>
+                <div class="footer-social-account">
 
-            <div class="col-4">
-                <h3>关注我们</h3>
+                </div>
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-12">
-                <hr>
-            </div>
             <div class="col-12">
                 <p class="footer-copyright "> &copy; 2019 - <?php echo date("Y") . ' ' . bloginfo('name') . '版权所有';
                     if ($icp !== "") {
