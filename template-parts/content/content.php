@@ -15,17 +15,23 @@
             </div>
         </div>
         <div class="col-xl-12">
-            <div class="article-lead">
+            <div class="article-lead text-secondary">
                 <?php echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?>
             </div>
         </div>
-        <div class="col-xl-10 article-meta">
+        <div class="col-xl-10 article-meta text-secondary">
             <div class="article-category">
                 <span class="oi oi-list-rich" aria-hidden="true"></span>
                 <a target="_blank"
                    href="<?php echo get_category_link($category[0]->term_id) ?>">
                     <?php echo $category[0]->name; ?>
                 </a>
+            </div>
+
+            <div class="article-read-times">
+                <span class="oi oi-eye" aria-hidden="true"></span>
+                <?php echo get_post_views($post->ID) . " 次阅读"; ?>
+
             </div>
 
             <div class="article-author">
@@ -36,7 +42,7 @@
                 </a>
             </div>
             <div class="article-publish-time">
-                <span class="oi oi-aperture" aria-hidden="true"></span>
+                <span class="oi oi-clock" aria-hidden="true"></span>
                 <?php echo get_the_time('Y-m-d'); ?>
             </div>
         </div>

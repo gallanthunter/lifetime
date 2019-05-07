@@ -41,17 +41,17 @@ a:hover {
 
 /*header 样式开始*/
 header {
-    margin: 10px 0;
+    margin-bottom: 10px;
     border-bottom: solid 1px #ececec;
     background-color: #FFFFFF;
 }
 
 .header-menu {
-    width: 100%;
-    height: auto;
+    /*width: 100%;*/
+    /*height: auto;*/
     position: relative;
     text-align: center;
-    margin: 10px 0 0 0;
+    margin: 20px 0 10px 0;
 }
 
 /*header 样式结束*/
@@ -92,7 +92,7 @@ header {
 article {
     height: auto;
     padding: 15px 10px;
-    margin: 20px 0;
+    margin-bottom: 20px;
     background: #fff;
     text-align: left;
     overflow: hidden;
@@ -122,13 +122,15 @@ article hr { /*透明渐变水平线*/
 .article-category {
     display: inline-block;
     padding: 0 15px;
-    /*background: url("/images/svg/list-rich.svg") no-repeat left center;*/
 }
 
+.article-read-times {
+    display: inline-block;
+    padding: 0 15px;
+}
 .article-author {
     display: inline-block;
     padding: 0 15px;
-    /*vertical-align: middle;*/
 }
 
 .article-publish-time {
