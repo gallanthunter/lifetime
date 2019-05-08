@@ -42,10 +42,6 @@ function remove_css_js_ver($src)
 register_nav_menus(array(
     'header-menu' => __('菜单导航'), 'footer-menu' => __('底部菜单'), 'friendlink-menu' => __('友情链接'),
 ));
-// sidebar
-register_sidebar(array(
-    'name' => '默认侧边栏', 'id' => 'widget_default', 'description' => '默认两栏内页的侧边栏', 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>', 'before_title' => '<h2>', 'after_title' => '</h2>'
-));
 //自定义摘要长度
 function custom_excerpt_length($length)
 {
@@ -135,5 +131,14 @@ function set_post_views()
 }
 
 add_action('get_header', 'set_post_views');
+/**
+ * 注册默认侧边栏工具
+ */
+function widgets_init()
+{
+    register_sidebar(array(
+        'name' => __('默认侧边栏', 'theme-slug'), 'id' => 'widget_default', 'description' => __('默认两栏内页的侧边栏', 'theme-slug'), 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>', 'before_title' => '<div class="widget-title">', 'after_title' => '</div>',
+    ));
+}
 
-
+add_action('widgets_init', 'widgets_init');
