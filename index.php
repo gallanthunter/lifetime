@@ -65,6 +65,7 @@
         <div class="col-xl-3">
             <section class="sidebar">
                 <?php get_template_part('sidebar'); ?>
+
             </section>
         </div>
     </div>

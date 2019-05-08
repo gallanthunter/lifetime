@@ -144,7 +144,7 @@ article hr { /*透明渐变水平线*/
     font-size: small;
 }
 
-.article-lead {
+.article-excerpt {
     padding: 0 0 0 15px;
     text-align: left;
     display: block;

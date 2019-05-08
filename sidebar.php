@@ -7,6 +7,9 @@
 ?>
 <div class="row">
     <div class="col-xl-12">
+        <?php dynamic_sidebar('widget_default'); ?>
+    </div>
+    <div class="col-xl-12">
         <div class="card">
             <div class="card-header bg-info font-weight-bold">header</div>
             <div class="card-body">

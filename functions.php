@@ -10,7 +10,6 @@ if (!defined("THEME_INC_PATH"))
 // include_once(THEME_INC_PATH . "/init-css.php");
 // include_once(THEME_INC_PATH . "/init-js.php");
 include_once(THEME_INC_PATH . "/HeaderMenu.php");
-
 // 移除head多余的link信息
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
@@ -40,7 +39,13 @@ function remove_css_js_ver($src)
 }
 
 //注册导航菜单
-register_nav_menus(array('header-menu' => __('菜单导航'), 'footer-menu' => __('底部菜单'), 'friendlink-menu' => __('友情链接'),));
+register_nav_menus(array(
+    'header-menu' => __('菜单导航'), 'footer-menu' => __('底部菜单'), 'friendlink-menu' => __('友情链接'),
+));
+// sidebar
+register_sidebar(array(
+    'name' => '默认侧边栏', 'id' => 'widget_default', 'description' => '默认两栏内页的侧边栏', 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>', 'before_title' => '<h2>', 'after_title' => '</h2>'
+));
 //自定义摘要长度
 function custom_excerpt_length($length)
 {
@@ -71,13 +76,6 @@ function get_post_thumbnail_url($post_id)
     }
 }
 
-// sidebar
-if (function_exists('register_sidebar')) {
-    register_sidebar(array(
-        'name' => '默认侧边栏', 'id' => 'sidebar-left', 'description' => '默认两栏内页的侧边栏', 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>', 'before_title' => '<h2>', 'after_title' => '</h2>'
-    ));
-    
-}
 function get_thumbnail($thumbnail_size)
 {
     if (get_option('mytheme_' . $thumbnail_size . '_thumbnails')) {
@@ -137,4 +135,5 @@ function set_post_views()
 }
 
 add_action('get_header', 'set_post_views');
-?>
+
+

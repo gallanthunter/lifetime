@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="col-xl-12">
-            <div class="article-lead text-secondary">
+            <div class="article-excerpt text-secondary">
                 <?php echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?>
             </div>
         </div>
