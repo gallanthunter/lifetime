@@ -37,14 +37,11 @@
         </div>
         <div class="row no-gutters">
             <div class="col-12">
-                <p class="footer-copyright "> &copy; 2019 - <?php echo date("Y") . ' ' . bloginfo('name') . '版权所有';
-                    if ($icp !== "") {
-                        echo ' | <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">' . stripslashes(get_option('mytheme_icp')) . '</a>';
-                    };
-                    if ($analytics !== "") {
-                        echo ' |  ' . stripslashes(get_option('mytheme_analytics'));
-                    }
-                    ?> </p>
+                <p class="footer-copyright ">
+                    &copy; 2019 - <?php echo date("Y") . ' ' . bloginfo('name') . '版权所有'; ?>
+                    <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">ICP-123456789</a>
+                    百度统计
+                </p>
             </div>
         </div>
     </div>

@@ -165,7 +165,7 @@ article hr { /*透明渐变水平线*/
 /* article 样式结束*/
 
 footer {
-    background: #333333;
+    background: #2b333E;
     border-top: #00C1DE 10px solid;
     border-image: -webkit-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
     border-image: -moz-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
@@ -194,6 +194,7 @@ footer a:hover {
 
 .footer-copyright {
     margin: 10px 0;
+    /*background: #1c2938;*/
     text-align: center;
     font-size: 14px;
 }

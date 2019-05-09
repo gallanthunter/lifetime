@@ -41,9 +41,9 @@
             <!-- 分页 -->
             <div class="row">
                 <div class="col-xl-12">
-                    <nav aria-label="Page navigation example">
+                    <nav aria-label="Page navigation">
                         <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
+                            <li class="page-item">
                                 <a class="page-link" href="#" tabindex="-1">上一页</a>
                             </li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -53,6 +53,9 @@
                                 <a class="page-link" href="#">下一页</a>
                             </li>
                         </ul>
+                    </nav>
+                    <nav aria-label="Page navigation">
+                        <?php bootstrap_pagenavi(); ?>
                     </nav>
                 </div>
             </div>
