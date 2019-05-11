@@ -128,6 +128,7 @@ article hr { /*透明渐变水平线*/
     display: inline-block;
     padding: 0 15px;
 }
+
 .article-author {
     display: inline-block;
     padding: 0 15px;
@@ -164,12 +165,49 @@ article hr { /*透明渐变水平线*/
 
 /* article 样式结束*/
 
+/* 侧边栏样式开始*/
+
+.widget {
+    height: auto;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    overflow: hidden;
+
+}
+
+.widget hr {
+    color: #1b1e21;
+}
+
+.widget ul {
+    font-size: 14px;
+}
+
+.widget ul li {
+    text-align: left;
+    list-style: decimal;
+}
+
+.widget-title {
+    padding: 10px;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.searchform {
+
+}
+
+/* 侧边栏样式结束*/
+
 footer {
     background: #2b333E;
-    border-top: #00C1DE 10px solid;
-    border-image: -webkit-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
-    border-image: -moz-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
-    border-image: linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;
+    /*border-top: #00C1DE 10px solid;*/
+    /*border-image: -webkit-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;*/
+    /*border-image: -moz-linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;*/
+    /*border-image: linear-gradient(to right, #777777, #00C1DE, #777777) 30 30;*/
     font-size: 14px;
     color: #777777;
 }
@@ -183,18 +221,30 @@ footer a:hover {
 }
 
 .footer-links {
-    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    margin: 5px;
     color: #777777;
 }
 
-.footer-contact-us {
-    margin: 10px 0;
-    color: #777777;
+
+.footer-menu-items {
+    width: 100%;
+    margin: 0;
+    padding: 0 1%;
+    display: block;
+    text-align: center;
+
 }
+
+.footer-menu-items li {
+    display: inline-block;
+    padding: 10px;
+}
+
 
 .footer-copyright {
-    margin: 10px 0;
-    /*background: #1c2938;*/
+    margin: 5px;
     text-align: center;
     font-size: 14px;
 }
