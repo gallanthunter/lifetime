@@ -27,10 +27,7 @@
 
 <script src="<?php echo get_template_directory_uri() . '/js/vendor/modernizr-3.7.1.min.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/vendor/jquery-3.4.0.min.js' ?>"></script>
-
 <script src="<?php echo get_template_directory_uri() . '/js/vendor/bootstrap.min.js' ?>"></script>
-
-
 <script src="<?php echo get_template_directory_uri() . '/js/plugins.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/main.js' ?>"></script>
 </body>

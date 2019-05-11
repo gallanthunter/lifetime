@@ -6,8 +6,6 @@
  */
 ?>
 <?php get_header(); ?>
-
-
 <div class="container p-0">
     <!-- 面包屑导航 -->
     <div class="row">
@@ -16,7 +14,6 @@
                 get_breadcrumbs(); ?>
         </div>
     </div>
-
 
     <div class="row">
         <div class="col-xl-9">
@@ -55,8 +52,6 @@
         </div>
     </div>
 </div>
-
-
 <?php get_footer(); ?>
 
 
