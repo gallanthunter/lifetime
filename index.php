@@ -30,7 +30,7 @@
                 query_posts($posts);
                 while (have_posts()): the_post();
                     // $category = get_the_category($post->ID);
-                    get_template_part('template-parts/content/content');
+                    get_template_part('template-parts/content/content', 'list');
                 endwhile;
                 wp_reset_query(); ?>
             </section>

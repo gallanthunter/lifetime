@@ -13,7 +13,7 @@ function get_breadcrumbs()
         echo '<div itemscope itemtype="http://schema.org/WebPage" id="crumbs">' . __('您现在的位置是：', 'cmp');
         global $post;
         $homeLink = home_url();
-        echo ' <a itemprop="breadcrumb" href="' . $homeLink . '">' . __('Home', 'cmp') . '</a> ' . $delimiter . ' ';
+        echo ' <a itemprop="breadcrumb" href="' . $homeLink . '">' . __('首页', 'cmp') . '</a> ' . $delimiter . ' ';
         if (is_category()) { // 分类 存档
             global $wp_query;
             $cat_obj   = $wp_query->get_queried_object();
