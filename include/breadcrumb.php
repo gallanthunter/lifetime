@@ -6,11 +6,11 @@
  */
 function get_breadcrumbs()
 {
-    $delimiter = '»'; // 分隔符
+    $delimiter = ' » '; // 分隔符
     $before    = '<span class="current">'; // 在当前链接前插入
     $after     = '</span>'; // 在当前链接后插入
     if (!is_home() && !is_front_page() || is_paged()) {
-        echo '<div itemscope itemtype="http://schema.org/WebPage" id="crumbs">' . __('您现在的位置是：', 'cmp');
+        echo '<div itemscope itemtype="http://schema.org/WebPage" class="crumbs">' . __('您现在的位置是：', 'cmp');
         global $post;
         $homeLink = home_url();
         echo ' <a itemprop="breadcrumb" href="' . $homeLink . '">' . __('首页', 'cmp') . '</a> ' . $delimiter . ' ';

@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-xl-12">
             <div class="article-title font-weight-bold text-center">
-                <a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a>
+                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             </div>
         </div>
 
@@ -31,20 +31,9 @@
         </div>
 
         <div class="col-xl-12">
-            <div class="article-content">
+            <div class="article-content text-secondary">
                 <p><?php the_content() ?></p>
             </div>
         </div>
-
-        <div class="col-xl-12 next_post">
-            <p><?php if (get_next_post()) {
-                    next_post_link('上一篇: %link', '%title', true);
-                } ?></p>
-            <p><?php if (get_previous_post()) {
-                    previous_post_link('下一篇: %link', '%title', true);
-                } ?> </p>
-        </div>
-
-
     </div>
 </article>

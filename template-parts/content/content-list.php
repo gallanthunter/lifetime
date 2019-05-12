@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-xl-12">
             <div class="article-title font-weight-bold">
-                <a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a>
+                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             </div>
         </div>
         <div class="col-xl-12">
