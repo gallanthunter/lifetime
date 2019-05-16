@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col-xl-9">
             <section class="article-list">
-                <div class="row no-gutters">
+                <div class="row">
                     <div class="col-xl-12">
                         <?php //get_template_part('template-parts/content/content','sticky');?>
                     </div>
@@ -30,15 +30,6 @@
                 endwhile;
                 wp_reset_query(); ?>
             </section>
-            
-            <!-- 分页 -->
-            <div class="row no-gutters">
-                <div class="col-xl-12">
-                    <nav aria-label="Page navigation">
-                        <?php bootstrap_pagination() ?>
-                    </nav>
-                </div>
-            </div>
         </div>
         <div class="col-xl-3">
             <section class="sidebar">

@@ -30,7 +30,7 @@
             <hr>
         </div>
         <div class="col-xl-12">
-            <div class="article-content">
+            <div class="article-content text-secondary">
                 <p><?php the_content() ?></p>
             </div>
         </div>

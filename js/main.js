@@ -12,8 +12,12 @@ $(document).ready(function () {
     footerPosition();
     $(window).resize(footerPosition);
 
-    function remove_article_list_excerpt_border() {
-
+    function remove_header_ul_li_a_title() {
+        var header_ul_li_a = $("ul li a");
+        header_ul_li_a.removeAttribute("title");
 
     }
+
+    remove_header_ul_li_a_title();
+
 });

@@ -6,7 +6,7 @@
  * 日期: 2019/5/11 19:55
  */
 
-class LeftSiderbarWidget extends Widget
+class TemplateWidget extends Widget
 {
     function My_Widget()
     {

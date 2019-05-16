@@ -12,8 +12,6 @@ Tags:
 */
 
 body {
-    /*font: 14px/1.4 Georgia, Serif;*/
-    /*font-family: 微软雅黑, Arial, Helvetica, sans-serif;*/
     position: relative;
     display: block;
     background: #f7f7f7;
@@ -74,7 +72,7 @@ header {
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
     border-bottom: 3px solid #fff;
-    font-size: larger;
+    font-size: 1.25rem;
     /*font-weight: bold;*/
     color: #333333;
 }
@@ -155,10 +153,11 @@ article hr { /*透明渐变水平线*/
 .article-excerpt {
     position: relative;
     border: 1px solid #6c757d;
+    margin: 1rem;
     padding: 0.5rem;
     text-align: left;
     display: block;
-    margin: 1rem;
+
 }
 
 .article-excerpt .article-excerpt-title {
@@ -178,10 +177,10 @@ article hr { /*透明渐变水平线*/
 .article-content {
     height: auto;
     margin: 1.5rem 0;
-    padding: 1.5rem 2.5% 10px 2.5%;
+    padding: 1.5rem 2.5%;
     display: block;
+    line-height: 2rem;
     text-align: left;
-    text-indent: 2rem;
 }
 
 /* article 样式结束*/
