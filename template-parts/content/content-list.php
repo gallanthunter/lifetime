@@ -7,8 +7,8 @@
 ?>
 <?php $category = get_the_category($post->ID); ?>
 
-<article>
-    <div class="row">
+<article class="card">
+    <div class="row card-body">
         <div class="col-xl-12">
             <div class="article-title font-weight-bold">
                 <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>

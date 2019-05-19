@@ -17,7 +17,7 @@
 
     <div class="row">
         <div class="col-xl-9">
-            <section class="article-list">
+            <section>
                 <div class="row">
                     <div class="col-xl-12">
                         <?php //get_template_part('template-parts/content/content','sticky');?>

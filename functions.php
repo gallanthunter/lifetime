@@ -7,11 +7,14 @@
 ob_start();
 if (!defined("THEME_INC_PATH"))
     define("THEME_INC_PATH", dirname(__FILE__) . "/include");
+if (!defined("THEME_WIDGET_PATH"))
+    define("THEME_WIDGET_PATH", dirname(__FILE__) . "/widget");
 // include_once(THEME_INC_PATH . "/init-css.php");
 // include_once(THEME_INC_PATH . "/init-js.php");
 // include_once(THEME_INC_PATH . "/HeaderMenu.php");
 include_once(THEME_INC_PATH . "/pagination.php");
 include_once(THEME_INC_PATH . "/breadcrumb.php");
+include_once(THEME_WIDGET_PATH . "/index.php");
 // 移除head多余的link信息
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
@@ -42,9 +45,10 @@ function remove_css_js_ver($src)
 
 //注册导航菜单
 register_nav_menus(array(
-    'header-menu' => __('菜单导航'), 'footer-menu' => __('底部菜单'), 'friendlink-menu' => __('友情链接'),
+    'header-menu'     => __('菜单导航'),
+    'footer-menu'     => __('底部菜单'),
+    'friendlink-menu' => __('友情链接'),
 ));
-
 //自定义摘要长度
 function custom_excerpt_length($length)
 {
@@ -84,7 +88,10 @@ function get_thumbnail($thumbnail_size)
     }
     $title = get_the_title();
     if (has_post_thumbnail()) {
-        the_post_thumbnail($thumbnail_size, array('alt' => $title, 'title' => $title));
+        the_post_thumbnail($thumbnail_size, array(
+            'alt'   => $title,
+            'title' => $title
+        ));
     } else {
         echo '<img alt="' . $title . '" title="' . $title . '" src="' . $case_thumbnails . '" />';
     }
@@ -137,13 +144,59 @@ add_action('get_header', 'set_post_views');
 /**
  * 注册默认侧边栏工具
  */
+// function widgets_init()
+// {
+//     register_sidebar(array(
+//         'name' => __('默认侧边栏', 'theme-slug'), 'id' => 'widget_default', 'description' => __('默认两栏内页的侧边栏', 'theme-slug'), 'before_widget' => '<div id="%1$s" class="widget %2$s card">', 'after_widget' => '</div>', 'before_title' => '<div class="widget-title card-header">', 'after_title' => '</div>',
+//     ));
+// }
+// add_action('widgets_init', 'widgets_init');
+//
 function widgets_init()
 {
-    register_sidebar(array(
-        'name' => __('默认侧边栏', 'theme-slug'), 'id' => 'widget_default', 'description' => __('默认两栏内页的侧边栏', 'theme-slug'), 'before_widget' => '<div id="%1$s" class="widget %2$s">', 'after_widget' => '</div>', 'before_title' => '<div class="widget-title">', 'after_title' => '</div> <hr>',
-    ));
+    if (function_exists('register_sidebar')) {
+        register_sidebar(array(
+            'name'          => '全站侧栏',
+            'id'            => 'widget_site_sidebar',
+            'before_widget' => '<div class="widget %2$s card">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="widget-title card-header">',
+            'after_title'   => '></div>'
+        ));
+        register_sidebar(array(
+            'name'          => '首页侧栏',
+            'id'            => 'widget_index_sidebar',
+            'before_widget' => '<div class="widget %2$s card">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="widget-title card-header">',
+            'after_title'   => '></div>'
+        ));
+        register_sidebar(array(
+            'name'          => '分类页侧栏',
+            'id'            => 'widget_cat_sidebar',
+            'before_widget' => '<div class="widget %2$s card">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="widget-title card-header">',
+            'after_title'   => '></div>'
+        ));
+        register_sidebar(array(
+            'name'          => '文章页侧栏',
+            'id'            => 'widget_post_sidebar',
+            'before_widget' => '<div class="widget %2$s card">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="widget-title card-header">',
+            'after_title'   => '></div>'
+        ));
+        register_sidebar(array(
+            'name'          => '其他页侧栏',
+            'id'            => 'widget_other_sidebar',
+            'before_widget' => '<div class="widget %2$s card">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="widget-title card-header">',
+            'after_title'   => '></div>'
+        ));
+    }
 }
+
 add_action('widgets_init', 'widgets_init');
-
-
 ?>

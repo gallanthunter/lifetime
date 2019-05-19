@@ -90,14 +90,16 @@ header {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     background: #FFFFFF;
+    font-size: small;
 }
+
 /* breadcrumb 样式结束*/
 
 /* article 样式开始 */
 article {
     height: auto;
-    padding: 1rem 0.5rem;
-    margin-bottom: 1.5rem;
+    /*padding: 1rem 0.5rem;*/
+    margin-bottom: 1rem;
     background: #fff;
     text-align: left;
     overflow: hidden;
@@ -152,7 +154,7 @@ article hr { /*透明渐变水平线*/
 
 .article-excerpt {
     position: relative;
-    border: 1px solid #6c757d;
+    border: 1px dotted #6c757d;
     margin: 1rem;
     padding: 0.5rem;
     text-align: left;
@@ -190,36 +192,62 @@ article hr { /*透明渐变水平线*/
 .widget {
     height: auto;
     margin-bottom: 1.5rem;
+    padding: 0;
     background: #FFFFFF;
     overflow: hidden;
 
 }
 
-.widget hr {
-    color: #1b1e21;
-}
-
-.widget ul {
-    font-size: 14px;
-}
-
-.widget ul li {
-    text-align: left;
-    list-style: decimal;
-}
-
 .widget-title {
     padding: 10px;
     width: 100%;
-    font-size: larger;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
+.widget ul {
+    padding: 1rem;
+    counter-reset: section;
+    line-height: 2rem;
+    font-size: small;
+}
 
-.searchform {
+.widget_recent_entries ul li {
+    /*list-style: decimal inside;*/
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
 
 }
 
+.widget_recent_entries ul li:before {
+    counter-increment: section;
+    content: counter(section);
+    display: inline-block;
+    padding: 0 6px;
+    margin-right: 10px;
+    height: 18px;
+    line-height: 18px;
+    background: #717070;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 9px
+}
+
+.widget_recent_entries ul li:nth-child(1):before {
+    background: #ff6a00
+}
+
+.widget_recent_entries ul li:nth-child(2):before {
+    background: #107db4
+}
+
+.widget_recent_entries ul li:nth-child(3):before {
+    background: #56ae11
+}
+
+.widget_recent_entries post-data {
+    float: right;
+}
 /* 侧边栏样式结束*/
 
 footer {
