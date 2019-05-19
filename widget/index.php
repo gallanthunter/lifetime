@@ -9,7 +9,8 @@
 <?php
 if (!defined("THEME_WIDGET_PATH"))
     define("THEME_WIDGET_PATH", dirname(__FILE__) . "/widget");
-include_once(THEME_WIDGET_PATH . "/about_x.php");
+include_once(THEME_WIDGET_PATH . "/about-x.php");
 include_once(THEME_WIDGET_PATH . "/hotnews.php");
+include_once(THEME_WIDGET_PATH . "/catpost.php");
 ?>
 

@@ -212,40 +212,38 @@ article hr { /*透明渐变水平线*/
     font-size: small;
 }
 
-.widget_recent_entries ul li {
-    /*list-style: decimal inside;*/
+.widget ul li {
     border-bottom: 1px dotted #ccc;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
 }
 
-.widget_recent_entries ul li:before {
+.widget ul li:before {
     counter-increment: section;
     content: counter(section);
     display: inline-block;
-    padding: 0 6px;
-    margin-right: 10px;
-    height: 18px;
-    line-height: 18px;
+    padding: 0 0.5rem;
+    line-height: 1.5rem;
     background: #717070;
     color: #fff;
     border-radius: 3px;
-    font-size: 9px
 }
 
-.widget_recent_entries ul li:nth-child(1):before {
+.widget ul li:nth-child(1):before {
     background: #ff6a00
 }
 
-.widget_recent_entries ul li:nth-child(2):before {
+.widget ul li:nth-child(2):before {
     background: #107db4
 }
 
-.widget_recent_entries ul li:nth-child(3):before {
+.widget ul li:nth-child(3):before {
     background: #56ae11
 }
 
-.widget_recent_entries post-data {
+.widget post-data {
     float: right;
 }
 /* 侧边栏样式结束*/
