@@ -14,10 +14,15 @@ $(document).ready(function () {
 
     function remove_header_ul_li_a_title() {
         var header_ul_li_a = $("ul li a");
-        header_ul_li_a.removeAttribute("title");
+        if (header_ul_li_a) {
+            for (var i in header_ul_li_a) {
+                i.removeAttr("title");
+            }
+        }
 
+        // header_ul_li_a.removeAttribute("title");
     }
 
-    remove_header_ul_li_a_title();
+    // remove_header_ul_li_a_title();
 
 });

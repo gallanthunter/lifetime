@@ -14,7 +14,9 @@
     <?php get_template_part('template-parts/header/header', 'meta'); ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/bootstrap.min.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/open-iconic-bootstrap.min.css'; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/css/about-x.css'; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
+
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
     <?php wp_head(); ?>

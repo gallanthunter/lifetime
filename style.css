@@ -191,6 +191,7 @@ article hr { /*透明渐变水平线*/
 
 .widget {
     height: auto;
+    width: 100%;
     margin-bottom: 1.5rem;
     padding: 0;
     background: #FFFFFF;
@@ -228,7 +229,7 @@ article hr { /*透明渐变水平线*/
     line-height: 1.5rem;
     background: #717070;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 0.25rem;
 }
 
 .widget ul li:nth-child(1):before {
@@ -245,6 +246,8 @@ article hr { /*透明渐变水平线*/
 
 .widget post-data {
     float: right;
+    overflow: hidden;
+    color: #777777;
 }
 /* 侧边栏样式结束*/
 

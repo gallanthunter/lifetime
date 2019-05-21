@@ -142,16 +142,8 @@ function set_post_views()
 
 add_action('get_header', 'set_post_views');
 /**
- * 注册默认侧边栏工具
+ * 注册侧边栏工具
  */
-// function widgets_init()
-// {
-//     register_sidebar(array(
-//         'name' => __('默认侧边栏', 'theme-slug'), 'id' => 'widget_default', 'description' => __('默认两栏内页的侧边栏', 'theme-slug'), 'before_widget' => '<div id="%1$s" class="widget %2$s card">', 'after_widget' => '</div>', 'before_title' => '<div class="widget-title card-header">', 'after_title' => '</div>',
-//     ));
-// }
-// add_action('widgets_init', 'widgets_init');
-//
 function widgets_init()
 {
     if (function_exists('register_sidebar')) {

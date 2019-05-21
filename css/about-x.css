@@ -1,0 +1,117 @@
+/*= common css to all effects =*/
+.about-x {
+    /*width: 100%;*/
+    text-align: center;
+    position: relative;
+    max-height: 20rem;
+    min-height: 20rem;
+    overflow: hidden;
+}
+
+.about-x h3 {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+
+.about-x h5 {
+    /*font-size: 16px;*/
+    font-weight: initial;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.about-x p {
+    font-size: small;
+    line-height: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-x .about-x-image {
+    border-bottom: 0.5rem solid #1fb554;
+    height: 212px;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.4s;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+.about-x:hover .about-x-image {
+    height: 81px;
+    transition: 0.4s;
+}
+
+.about-x .about-x-image img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+.about-x .about-x-info {
+    transition: 0.4s;
+}
+
+
+.about-x .social-touch {
+    background-color: #1fb554;
+    float: left;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.about-x .social-touch a {
+    display: inline-block;
+    width: 27px;
+    height: 26px;
+    vertical-align: middle;
+    margin: 0 2px;
+    background-image: url(../images/social-icons.png);
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.about-x .social-touch a:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.about-x .fb-touch {
+    background-position: 0 0;
+}
+
+.about-x .tweet-touch {
+    background-position: -35px 0;
+}
+
+.about-x .linkedin-touch {
+    background-position: -71px 0;
+}
+
+.about-x .icon-colored .fb-touch {
+    background-position: 0 -27px;
+}
+
+.about-x .icon-colored .tweet-touch {
+    background-position: -35px -27px;
+}
+
+.about-x .icon-colored .linkedin-touch {
+    background-position: -71px -27px;
+}
+
+/*= common css to all effects end =*/
+
+
+/*= effect-2 css end =*/
