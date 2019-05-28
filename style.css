@@ -249,6 +249,51 @@ article hr { /*透明渐变水平线*/
     overflow: hidden;
     color: #777777;
 }
+
+/* 搜索框开始 */
+.widget_search {
+    /*padding: 1rem 0;*/
+    width: 100%;
+    border: none;
+}
+
+.widget_search form {
+    position: relative;
+    margin: 0.25rem;
+}
+
+.widget_search input {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    font-size: small;
+}
+
+.widget_search button {
+    height: 2rem;
+    width: 5rem;
+    cursor: pointer;
+    position: absolute;
+    background: #4CAF50;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    top: 0;
+    right: 0;
+    font-size: small;
+}
+
+
+.widget_search button:before {
+    content: "搜索";
+    color: #F9F0DA;
+}
+
+/* 搜索框结束 */
+
 /* 侧边栏样式结束*/
 
 footer {

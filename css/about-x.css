@@ -3,8 +3,8 @@
     /*width: 100%;*/
     text-align: center;
     position: relative;
-    max-height: 20rem;
-    min-height: 20rem;
+    max-height: 19rem;
+    min-height: 19rem;
     overflow: hidden;
 }
 
@@ -12,17 +12,16 @@
     font-size: larger;
     font-weight: bold;
     margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    text-transform: uppercase;
+    /*padding-top: 0.5rem;*/
     line-height: 2.5rem;
 }
 
 
 .about-x h5 {
-    /*font-size: 16px;*/
-    font-weight: initial;
-    margin-bottom: 1rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    /*font-weight: initial;*/
+    /*margin-bottom: 1rem;*/
+    /*line-height: 1.5rem;*/
 }
 
 .about-x p {
