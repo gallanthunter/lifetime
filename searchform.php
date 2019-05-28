@@ -8,8 +8,8 @@
 ?>
 
 
-<form action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
-    <input type="text" placeholder="请输入搜索内容" name="searchContent">
+<form role="search" action="<?php bloginfo('siteurl'); ?>" id="searchform" method="get">
+    <input type="text" placeholder="请输入搜索内容" value="" name="s" id="s">
     <button type="submit"></button>
 </form>
 
