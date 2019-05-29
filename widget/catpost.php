@@ -17,28 +17,7 @@ class cat_post extends WP_Widget
         $this->WP_Widget('cat_post', '同分类文章', $widget_ops);
     }
     
-    function update($new_instance, $old_instance)
-    {
-        $instance              = $old_instance;
-        $instance['title']     = strip_tags($new_instance['title']);
-        $instance['posts_num'] = strip_tags($new_instance['posts_num']);
-        $instance['time']      = strip_tags($new_instance['time']);
-        $instance['orderby']   = strip_tags($new_instance['orderby']);
-        return $instance;
-    }
     
-    function widget($args, $instance)
-    {
-        extract($args, EXTR_SKIP);
-        echo $before_widget;
-        $title     = apply_filters('widget_name', $instance['title']);
-        $posts_num = $instance['posts_num'];
-        $time      = $instance['time'];
-        $orderby   = $instance['orderby'];
-        echo $before_title . $title . $after_title;
-        echo widget_cat_post($posts_num, $time, $orderby);
-        echo $after_widget;
-    }
     
     function form($instance)
     {
@@ -48,10 +27,10 @@ class cat_post extends WP_Widget
             'time'      => '0',
             'orderby'   => 'date',
         ));
-        $title     = strip_tags($instance['title']);
-        $posts_num = strip_tags($instance['posts_num']);
-        $time      = strip_tags($instance['time']);
-        $orderby   = strip_tags($instance['orderby']);
+        $title     = esc_attr($instance['title']);
+        $posts_num = esc_attr($instance['posts_num']);
+        $time      = esc_attr($instance['time']);
+        $orderby   = esc_attr($instance['orderby']);
         ?>
         <p>
             <label for="<?php echo $this->get_field_id('title'); ?>"> 填写标题：</label>
@@ -92,17 +71,36 @@ class cat_post extends WP_Widget
         </p>
         <?php
     }
+    
+    function update($new_instance, $old_instance)
+    {
+        // $instance['title']     = strip_tags($new_instance['title']);
+        // $instance['posts_num'] = strip_tags($new_instance['posts_num']);
+        // $instance['time']      = strip_tags($new_instance['time']);
+        // $instance['orderby']   = strip_tags($new_instance['orderby']);
+        // return $instance;
+        return $new_instance;
+    }
+    
+    function widget($args, $instance)
+    {
+        extract($args);
+        $title     = apply_filters('widget_title', $instance['title']);
+        $posts_num = $instance['posts_num'];
+        $time      = $instance['time'];
+        $orderby   = $instance['orderby'];
+        widget_cat_post($title, $posts_num, $time, $orderby);
+    }
 }
 
 register_widget('cat_post');
-function widget_cat_post($posts_num, $time, $orderby)
+function widget_cat_post($title, $posts_num, $time, $orderby)
 {
     ?>
-    <div class="cat-post">
+    <div class="widget cat-post card">
+        <div class="widget-title card-header"><?php echo $title ?></div>
         <ul>
             <?php
-            $post_num    = $posts_num;
-            $orderby     = $orderby;
             $category    = get_the_category();
             $cats        = $category[0]->cat_ID;
             $args        = array(
@@ -125,9 +123,7 @@ function widget_cat_post($posts_num, $time, $orderby)
             while ($query_posts->have_posts()) {
                 $query_posts->the_post(); ?>
                 <li>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                        <i class="wi wi-right"></i><span class="hot-post-title"><?php the_title(); ?></span>
-                    </a>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> <?php the_title(); ?> </a>
                 </li>
             <?php }
             wp_reset_query(); ?>
