@@ -14,7 +14,7 @@
                 get_breadcrumbs(); ?>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-xl-12">
             <section class="article-list">
@@ -33,4 +33,4 @@
         </div>
     </div>
 </div>
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

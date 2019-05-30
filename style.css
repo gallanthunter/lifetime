@@ -319,6 +319,61 @@ article hr { /*透明渐变水平线*/
 
 /* 侧边栏样式结束*/
 
+
+/* 时间轴样式开始 */
+.timeline {
+    margin: 0 10rem;
+}
+
+.timeline-item {
+    padding: 3rem 2rem 2rem;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+    line-height: 1.5rem;
+}
+
+.timeline-item h1 {
+    font-size: larger;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+}
+
+
+.timeline-item::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 700;
+    font-size: .785rem;
+}
+
+.timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.timeline-item:last-child {
+    -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+/* 时间轴样式结束*/
+
 footer {
     background: #2b333E;
     /*font-size: 14px;*/
