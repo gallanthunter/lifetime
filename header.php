@@ -28,7 +28,9 @@
     <div class="container p-0">
         <div class="row no-gutters">
             <div class="col-xl-2">
-                <div class="logo"></div>
+                <div class="header-logo">
+                    <img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>">
+                </div>
             </div>
             <div class="col-xl-10">
                 <div class="header-menu font-weight-bold">

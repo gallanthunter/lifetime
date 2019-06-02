@@ -43,6 +43,12 @@ header {
     background-color: #FFFFFF;
 }
 
+.header-logo {
+    position: relative;
+    text-align: center;
+    margin: 1rem 0;
+}
+
 .header-menu {
     /*width: 100%;*/
     /*height: auto;*/
