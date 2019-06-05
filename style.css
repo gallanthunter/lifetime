@@ -46,7 +46,7 @@ header {
 .header-logo {
     position: relative;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 .header-menu {
@@ -54,7 +54,7 @@ header {
     /*height: auto;*/
     position: relative;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 /*header 样式结束*/

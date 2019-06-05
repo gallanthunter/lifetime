@@ -90,9 +90,9 @@ class About_x extends WP_Widget
                 </div>
 
                 <div class="social-touch">
-                    <a class="fb-touch" href="#"></a>
-                    <a class="tweet-touch" href="#"></a>
-                    <a class="linkedin-touch" href="#"></a>
+                    <a class="wechart-touch" href="#"></a>
+                    <a class="qq-touch" href="#"></a>
+                    <a class="weibo-touch" href="#"></a>
                 </div>
             </div>
         </div>
