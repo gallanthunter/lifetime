@@ -16,8 +16,7 @@
             <div class="col-xl-12 footer-copyright">
                 <p>
                     Copyright &copy; 2019 - <?php echo date("Y") ?> <?php echo ' ' . bloginfo('name') . ' 版权所有'; ?>
-                    <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">ICP-123456789</a>
-                    百度统计
+                    <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备19061878</a>
                 </p>
             </div>
         </div>
