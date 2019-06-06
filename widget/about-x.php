@@ -74,7 +74,7 @@ class About_x extends WP_Widget
         <div class="widget card">
             <div class="about-x">
                 <div class="about-x-image">
-                    <img src="<?php echo get_template_directory_uri() . '/images/member_270x210.jpg'; ?>" alt="Member">
+                    <img src="<?php echo get_template_directory_uri() . '/images/me_270x210.jpg'; ?>" alt="Member">
                 </div>
                 <div class="about-x-info">
                     <h3 class="text-success">
