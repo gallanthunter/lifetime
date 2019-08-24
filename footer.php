@@ -9,14 +9,17 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12 footer-links">
-                <?php wp_nav_menu(array('theme_location' => 'footer-menu', 'items_wrap' => '<ul class="footer-menu-items">%3$s</ul>')); ?>
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'footer-menu',
+                    'items_wrap'     => '<ul class="footer-menu-items">%3$s</ul>'
+                )); ?>
             </div>
         </div>
         <div class="row">
             <div class="col-xl-12 footer-copyright">
                 <p>
                     Copyright &copy; 2019 - <?php echo date("Y") ?> <?php echo ' ' . bloginfo('name') . ' 版权所有'; ?>
-                    <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备19061878</a>
+                    <a rel="nofollow" target="_blank" href="http://www.miibeian.gov.cn/">粤ICP备19061878号</a>
                 </p>
             </div>
         </div>
