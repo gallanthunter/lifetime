@@ -7,12 +7,12 @@
 function bootstrap_pagination()
 {
     global $paged, $wp_query;
-    $range = 4;
-    if (!$max_page) {
-        $max_page = $wp_query->max_num_pages;
-    }
+    $range    = 4;
+    $max_page = $wp_query->max_num_pages;
+    if ($max_page == 1)
+        return;
     if ($max_page > 1) {
-        echo "<ul class='pagination justify-content-center'>";
+        echo "<ul class='pagination'>";
         if (!$paged) {
             $paged = 1;
         }

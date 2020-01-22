@@ -21,84 +21,32 @@
                 </div>
                 <div class="col-xl-12">
                     <?php the_content() ?>
-
-                    <div class="timeline-item" date-is='20-07-1990'>
-                        <h1>Hello, 'Im a single div responsive timeline without mediaQueries!</h1>
+                    <div class="timeline-item" date-is='2019-02-15'>
+                        <h1>域名注册成功</h1>
                         <p>
-                            I'm speaking with myself, number one, because I have a very good brain and I've said a lot
-                            of
-                            things. I write the best placeholder text, and I'm the biggest developer on the web by
-                            far...
-                            While that's mock-ups and this is politics, are they really so different? I think the only
-                            card
-                            she has is the Lorem card.
+                            成功注册域名jungedushu.com。
+                        </p>
+                    </div>
+                    <div class="timeline-item" date-is='2019-06-05'>
+                        <h1>服务器开通</h1>
+                        <p>
+                            在阿里云购买服务器，并开通服务，部署wordpress程序。
+                        </p>
+                    </div>
+                    <div class="timeline-item" date-is='2019-06-06'>
+                        <h1>网站备案成功</h1>
+                        <p>
+                            网站在工信部备案申请审核通过，备案号：粤ICP备19061878号。
+                        </p>
+                    </div>
+                    <div class="timeline-item" date-is='2019-08-06'>
+                        <h1>爱阅读正式上线</h1>
+                        <p>
+                            完全自己开发设计的网站--爱阅读，上线了。虽然很多功能还没完善，但是可以使用了，全部的代码在github上载了。
+                            仓库地址：https://github.com/gallanthunter/lifetime
                         </p>
                     </div>
 
-                    <div class="timeline-item" date-is='20-07-1990'>
-                        <h1>Oeehhh, that's awesome.. Me too!</h1>
-                        <p>
-                            I'm speaking with myself, number one, because I have a very good brain and I've said a lot
-                            of
-                            things. I write the best placeholder text, and I'm the biggest developer on the web by
-                            far...
-                            While that's mock-ups and this is politics, are they really so different? I think the only
-                            card
-                            she has is the Lorem card.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item" date-is='20-07-1990'>
-                        <h1>I'm ::last-child so my border fades ^__^</h1>
-                        <p>
-                            I'm speaking with myself, number one, because I have a very good brain and I've said a lot
-                            of
-                            things. I write the best placeholder text, and I'm the biggest developer on the web by
-                            far...
-                            While that's mock-ups and this is politics, are they really so different? I think the only
-                            card
-                            she has is the Lorem card.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item" date-is='20-07-1990'>
-                        <h1>I'm ::last-child so my border fades ^__^</h1>
-                        <p>
-                            I'm speaking with myself, number one, because I have a very good brain and I've said a lot
-                            of
-                            things. I write the best placeholder text, and I'm the biggest developer on the web by
-                            far...
-                            While that's mock-ups and this is politics, are they really so different? I think the only
-                            card
-                            she has is the Lorem card.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item" date-is='20-07-1990'>
-                        <h1>I'm ::last-child so my border fades ^__^</h1>
-                        <p>
-                            I'm speaking with myself, number one, because I have a very good brain and I've said a lot
-                            of
-                            things. I write the best placeholder text, and I'm the biggest developer on the web by
-                            far...
-                            While that's mock-ups and this is politics, are they really so different? I think the only
-                            card
-                            she has is the Lorem card.
-                        </p>
-                    </div>
-
-                    <div class="timeline-item" date-is='20-07-1990'>
-                        <h1>I'm ::last-child so my border fades ^__^</h1>
-                        <p>
-                            I'm speaking with myself, number one, because I have a very good brain and I've said a lot
-                            of
-                            things. I write the best placeholder text, and I'm the biggest developer on the web by
-                            far...
-                            While that's mock-ups and this is politics, are they really so different? I think the only
-                            card
-                            she has is the Lorem card.
-                        </p>
-                    </div>
                 </div>
             </section>
         </div>

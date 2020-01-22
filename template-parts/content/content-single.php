@@ -23,12 +23,14 @@
         <div class="col-xl-12">
             <hr>
         </div>
-        <div class="col-xl-12">
-            <div class="lead article-excerpt text-secondary">
-                <span class="article-excerpt-title">摘要</span>
-                <p><?php echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?></p>
-            </div>
-        </div>
+
+        <!--        <div class="col-xl-12">-->
+        <!--            <div class="article-excerpt text-secondary">-->
+        <!--                <span class="article-excerpt-title">摘要</span>-->
+        <!--                <p>-->
+        <?php //echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?><!--</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
         <div class="col-xl-12">
             <div class="article-content text-secondary">

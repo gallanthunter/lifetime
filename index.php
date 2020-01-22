@@ -40,7 +40,7 @@
 
         </div>
         <div class="col-xl-3">
-            <section class="sidebar">
+            <section class="sidebar text-secondary">
                 <?php get_template_part('sidebar'); ?>
 
             </section>

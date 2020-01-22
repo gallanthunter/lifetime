@@ -11,19 +11,21 @@ Text Domain: iReading
 Tags:
 */
 
-
-$white: #FFFFFF;
+/* color */
 $peter-river: #3498DB;
 $body-background: #F7F7F7;
-$header-background: $white;
+$header-background: white;
 $header-border-color: #ECECEC;
 $a-color: #3498DB;
 $a-hover: $peter-river;
+$footer-background: #2b333E;
+$footer-font-color: #777777;
 
 body {
   position: relative;
   display: block;
   background: $body-background;
+  font-size: medium;
 }
 
 img {
@@ -181,9 +183,9 @@ article hr { /*透明渐变水平线*/
   position: absolute;
   top: -1em;
   left: 5%;
-  line-height: 2rem;
+  line-height: 1.5rem;
   padding: 0 0.5rem;
-  background-color: #fff;
+  background-color: white;
 }
 
 .article-excerpt-no-border {
@@ -193,8 +195,8 @@ article hr { /*透明渐变水平线*/
 
 .article-content {
   height: auto;
-  margin: 1.5rem 0;
-  padding: 1.5rem 2.5%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 2.5%;
   display: block;
   line-height: 2rem;
   text-align: left;
@@ -209,7 +211,8 @@ article hr { /*透明渐变水平线*/
   width: 100%;
   margin-bottom: 1.5rem;
   padding: 0;
-  background: #FFFFFF;
+  background: white;
+  font-size: medium;
   overflow: hidden;
 
 }
@@ -305,7 +308,7 @@ article hr { /*透明渐变水平线*/
   width: 100%;
   height: 2rem;
   padding: 0.5rem;
-  border: 2px solid #4CAF50;
+  border: 2px solid $peter-river;
   border-radius: 5px;
   background: transparent;
   outline: none;
@@ -317,7 +320,7 @@ article hr { /*透明渐变水平线*/
   width: 5rem;
   cursor: pointer;
   position: absolute;
-  background: #4CAF50;
+  background: $peter-river;
   border: none;
   border-radius: 0 5px 5px 0;
   top: 0;
@@ -391,24 +394,23 @@ article hr { /*透明渐变水平线*/
 /* 时间轴样式结束*/
 
 footer {
-  background: #2b333E;
-  /*font-size: 14px;*/
-  color: #777777;
+  background: $footer-background;
+  color: $footer-font-color;
 }
 
 footer a {
-  color: #777777;
+  color: $footer-font-color;
 }
 
 footer a:hover {
-  color: #777777;
+  color: $footer-font-color;
 }
 
 .footer-links {
   position: relative;
   text-align: center;
   margin: 0.5rem;
-  color: #777777;
+  color: $footer-font-color;
 }
 
 
@@ -430,5 +432,4 @@ footer a:hover {
 .footer-copyright {
   margin: 0.5rem;
   text-align: center;
-  /*font-size: 14px;*/
 }
