@@ -16,10 +16,16 @@ $peter-river: #3498DB;
 $body-background: #F7F7F7;
 $header-background: white;
 $header-border-color: #ECECEC;
-$a-color: #3498DB;
+$a-color: $peter-river;
 $a-hover: $peter-river;
 $footer-background: #2b333E;
 $footer-font-color: #777777;
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 body {
   position: relative;
@@ -95,8 +101,8 @@ header {
 }
 
 .header-menu-items li.current-menu-item, .header-menu-items li:hover {
-  color: #17a2b8;
-  border-bottom: solid 3px #777777;
+  color: $peter-river;
+  border-bottom: solid 3px $peter-river;
 }
 
 /* wordpress nav 自动生成代码结束 */
@@ -269,28 +275,6 @@ article hr { /*透明渐变水平线*/
   color: #777777;
 }
 
-/*.widget hot-post ul li:before {*/
-/*    counter-increment: section;*/
-/*    content: counter(section);*/
-/*    display: inline-block;*/
-/*    padding: 0 0.5rem;*/
-/*    line-height: 1.5rem;*/
-/*    background: #717070;*/
-/*    color: #fff;*/
-/*    border-radius: 0.25rem;*/
-/*}*/
-
-/*.widget hot-post ul li:nth-child(1):before {*/
-/*    background: #ff6a00*/
-/*}*/
-
-/*.widget hot-post ul li:nth-child(2):before {*/
-/*    background: #107db4*/
-/*}*/
-
-/*.widget hot-post ul li:nth-child(3):before {*/
-/*    background: #56ae11*/
-/*}*/
 
 /* 搜索框开始 */
 .widget_search {

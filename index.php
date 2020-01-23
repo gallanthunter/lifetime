@@ -16,7 +16,7 @@
     </div>
 
     <div class="row">
-        <div class="col-xl-9">
+        <div class="col-xl-8 p-2">
             <section>
                 <div class="row">
                     <div class="col-xl-12">
@@ -39,7 +39,7 @@
             <?php get_template_part('template-parts/content/content', 'pagination'); ?>
 
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-4 p-2">
             <section class="sidebar text-secondary">
                 <?php get_template_part('sidebar'); ?>
 
