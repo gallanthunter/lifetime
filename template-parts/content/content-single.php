@@ -33,7 +33,7 @@
         <!--        </div>-->
 
         <div class="col-xl-12">
-            <div class="article-content text-secondary">
+            <div class="article-content">
                 <p><?php the_content() ?></p>
             </div>
         </div>
