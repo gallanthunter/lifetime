@@ -12,14 +12,26 @@ Tags:
 */
 
 /* color */
-$peter-river: #3498DB;
-$body-background: #F7F7F7;
+
+$background: #F7F7F7;
+
+// header color
 $header-background: white;
 $header-border-color: #ECECEC;
-$a-color: $peter-river;
-$a-hover: $peter-river;
+
+// content color
+$content-background: white;
+
+// footer color
 $footer-background: #2b333E;
 $footer-font-color: #777777;
+
+// link color
+$a-link-color: #3498DB;
+$a-hover-color: #3498DB;
+$a-visited-color: #3498DB;
+$a-active-color: #3498DB;
+
 
 @media (min-width: 1920px) {
   .container {
@@ -30,7 +42,7 @@ $footer-font-color: #777777;
 body {
   position: relative;
   display: block;
-  background: $body-background;
+  background: $background;
   font-family: 'Microsoft Yahei', '微软雅黑', 'Arial', 'sans-serif';
   font-size: medium;
 }
@@ -51,12 +63,12 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: $a-hover;
+  color: $a-hover-color;
 }
 
 /*header 样式开始*/
 header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   border-bottom: solid 1px $header-border-color;
   background-color: $header-background;
 }
@@ -95,15 +107,15 @@ header {
   -moz-transition: all 0.8s;
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid $content-background;
   font-size: 1.25rem;
   /*font-weight: bold;*/
   color: #333333;
 }
 
 .header-menu-items li.current-menu-item, .header-menu-items li:hover {
-  color: $peter-river;
-  border-bottom: solid 3px $peter-river;
+  color: $a-hover-color;
+  border-bottom: solid 3px $a-hover-color;
 }
 
 /* wordpress nav 自动生成代码结束 */
@@ -111,20 +123,22 @@ header {
 /* breadcrumb 样式开始*/
 .crumbs {
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   padding: 0.5rem;
-  background: #FFFFFF;
+  background: $content-background;
   font-size: small;
 }
 
 /* breadcrumb 样式结束*/
 
 /* article 样式开始 */
+
+/* article 样式开始 */
 article {
   height: auto;
   /*padding: 1rem 0.5rem;*/
-  margin-bottom: 1rem;
-  background: #fff;
+  margin-bottom: 0.5rem;
+  background: $content-background;
   text-align: left;
   overflow: hidden;
 }
@@ -132,9 +146,14 @@ article {
 article hr { /*透明渐变水平线*/
   width: 100%;
   height: 1px;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   border: 0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
 }
 
 .article-title {
@@ -145,7 +164,7 @@ article hr { /*透明渐变水平线*/
 
 .article-meta {
   display: inline-block;
-  margin: 0.5rem 0px;
+  margin: 0.5rem 0;
   vertical-align: middle;
   font-size: small;
 }
@@ -167,7 +186,7 @@ article hr { /*透明渐变水平线*/
 
 .article-publish-time {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 
 .article-more {
@@ -209,9 +228,16 @@ article hr { /*透明渐变水平线*/
   text-align: left;
 }
 
-.article img {
+.article-tag {
+  height: auto;
   width: 100%;
+  /*padding: 1rem 0.5rem;*/
+  margin: 0 1rem;
+  background: $content-background;
+  line-height: 2rem;
+  text-align: left;
 }
+
 
 /* article 样式结束*/
 
@@ -222,7 +248,7 @@ article hr { /*透明渐变水平线*/
   width: 100%;
   margin-bottom: 1.5rem;
   padding: 0;
-  background: white;
+  background: $content-background;
   font-size: medium;
   overflow: hidden;
 
@@ -258,7 +284,7 @@ article hr { /*透明渐变水平线*/
   padding: 0 0.5rem;
   line-height: 1.5rem;
   background: #717070;
-  color: #fff;
+  //color: $content-background;
   border-radius: 0.25rem;
 }
 
@@ -297,7 +323,7 @@ article hr { /*透明渐变水平线*/
   width: 100%;
   height: 2rem;
   padding: 0.5rem;
-  border: 2px solid $peter-river;
+  border: 2px solid $a-hover-color;
   border-radius: 5px;
   background: transparent;
   outline: none;
@@ -309,7 +335,7 @@ article hr { /*透明渐变水平线*/
   width: 5rem;
   cursor: pointer;
   position: absolute;
-  background: $peter-river;
+  background: $a-hover-color;
   border: none;
   border-radius: 0 5px 5px 0;
   top: 0;
@@ -372,7 +398,7 @@ article hr { /*透明渐变水平线*/
   border-radius: 10px;
   content: '';
   border: 2px solid rgba(0, 0, 0, 0.3);
-  background: white;
+  background: $content-background;
 }
 
 .timeline-item:last-child {

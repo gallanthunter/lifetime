@@ -11,16 +11,16 @@
 
 <article>
     <div class="row">
-        <div class="col-xl-12">
+        <div class="col-12">
             <div class="article-title font-weight-bold text-center">
                 <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             </div>
         </div>
 
-        <div class="col-xl-12 text-secondary text-center">
+        <div class="col-12 text-secondary text-center">
             <?php get_template_part('template-parts/content/content', 'meta'); ?>
         </div>
-        <div class="col-xl-12">
+        <div class="col-12">
             <hr>
         </div>
 
@@ -32,10 +32,12 @@
         <!--            </div>-->
         <!--        </div>-->
 
-        <div class="col-xl-12">
+        <div class="col-12">
             <div class="article-content">
                 <p><?php the_content() ?></p>
             </div>
         </div>
     </div>
+
 </article>
+

@@ -17,7 +17,6 @@ Tags:
         max-width: 1200px;
     }
 }
-
 body {
     position: relative;
     display: block;
@@ -47,7 +46,7 @@ a:hover {
 
 /*header 样式开始*/
 header {
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     border-bottom: solid 1px #ECECEC;
     background-color: white;
 }
@@ -84,7 +83,7 @@ header {
     -moz-transition: all 0.8s;
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid white;
     font-size: 1.25rem;
     /*font-weight: bold;*/
     color: #333333;
@@ -99,19 +98,20 @@ header {
 /* breadcrumb 样式开始*/
 .crumbs {
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     padding: 0.5rem;
-    background: #FFFFFF;
+    background: white;
     font-size: small;
 }
 
 /* breadcrumb 样式结束*/
 /* article 样式开始 */
+/* article 样式开始 */
 article {
     height: auto;
     /*padding: 1rem 0.5rem;*/
-    margin-bottom: 1rem;
-    background: #fff;
+    margin-bottom: 0.5rem;
+    background: white;
     text-align: left;
     overflow: hidden;
 }
@@ -120,9 +120,14 @@ article hr {
     /*透明渐变水平线*/
     width: 100%;
     height: 1px;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     border: 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
 }
 
 .article-title {
@@ -133,7 +138,7 @@ article hr {
 
 .article-meta {
     display: inline-block;
-    margin: 0.5rem 0px;
+    margin: 0.5rem 0;
     vertical-align: middle;
     font-size: small;
 }
@@ -155,7 +160,7 @@ article hr {
 
 .article-publish-time {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 .article-more {
@@ -196,8 +201,14 @@ article hr {
     text-align: left;
 }
 
-.article img {
+.article-tag {
+    height: auto;
     width: 100%;
+    /*padding: 1rem 0.5rem;*/
+    margin: 0 1rem;
+    background: white;
+    line-height: 2rem;
+    text-align: left;
 }
 
 /* article 样式结束*/
@@ -241,7 +252,6 @@ article hr {
     padding: 0 0.5rem;
     line-height: 1.5rem;
     background: #717070;
-    color: #fff;
     border-radius: 0.25rem;
 }
 
