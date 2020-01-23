@@ -16,7 +16,7 @@
     </div>
     
     <div class="row">
-        <div class="col-xl-9">
+        <div class="col-xl-8 p-2">
             <section class="article-list">
                 <div class="row">
                     <div class="col-xl-12">
@@ -31,7 +31,7 @@
                 wp_reset_query(); ?>
             </section>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-4 p-2">
             <section class="sidebar">
                 <?php get_template_part('sidebar'); ?>
             
