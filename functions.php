@@ -31,10 +31,14 @@ add_filter('excerpt_length', 'custom_excerpt_length', 999);
 // remove wordpress CSS and Js version
 add_filter('style_loader_src', 'remove_css_js_ver', 999);
 add_filter('script_loader_src', 'remove_css_js_ver', 999);
-//disable emojis
-add_action('init', 'disable_emojis');
+
 //use local emojis
 add_filter('smilies_src', 'custom_smilies_src', 1, 10);
+// 自动修改上传文件名称
+add_filter('wp_handle_upload_prefilter', 'git_upload_filter');
+//disable emojis
+add_action('init', 'disable_emojis');
+add_action('widgets_init', 'widgets_init');
 //移除版本号
 function remove_css_js_ver($src)
 {
@@ -52,7 +56,7 @@ register_nav_menus(array(
 //自定义摘要长度
 function custom_excerpt_length($length)
 {
-    return 500;
+    return 200;
 }
 
 // get category root id
@@ -190,5 +194,18 @@ function widgets_init()
     }
 }
 
-add_action('widgets_init', 'widgets_init');
+/**
+ * git_upload_filter()函数
+ * 功能：上传文件重命名
+ *
+ * @Param $file   文件名
+ * @Return $file    重命名后的文件名
+ */
+function git_upload_filter($file)
+{
+    $time         = date("YmdHis");
+    $file['name'] = $time . "" . mt_rand(1, 100) . "." . pathinfo($file['name'], PATHINFO_EXTENSION);
+    return $file;
+}
+
 ?>
