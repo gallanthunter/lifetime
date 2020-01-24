@@ -41,7 +41,7 @@ $header-border-color: rgba(0, 0, 0, .125);
 $content-background: $white;
 $footer-background: $dark;
 $footer-font-color: $light;
-$a-link-color: $primary;
+$a-link-color: $dark;
 $a-hover-color: $primary;
 $a-visited-color: $primary;
 $a-active-color: $primary;
@@ -58,7 +58,6 @@ body {
   display: block;
   background: $background;
   font-family: '微软雅黑', 'Microsoft Yahei', 'Arial', 'sans-serif';
-  font-size: medium;
 }
 
 img {
@@ -72,7 +71,7 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: #444
+  color: $a-link-color;
 }
 
 a:hover {
@@ -137,12 +136,11 @@ header {
 /* breadcrumb 样式开始*/
 .breadcrumb {
   width: 100%;
-  margin-bottom: 0;
+  margin: 0.25rem 0;
   padding: 0.5rem;
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: .25rem;
   background: $content-background;
-  font-size: small;
 }
 
 /* breadcrumb 样式结束*/
@@ -243,6 +241,15 @@ article img {
   text-align: left;
 }
 
+.article-content h2, .article-content h3 {
+  //margin-left: -1rem;
+  padding: 0.25rem 1rem;
+  border-left: 0.25rem solid $info;
+  //font-size: medium;
+  font-weight: bold;
+  background-color: $light;
+}
+
 .article-tag {
   height: auto;
   width: 100%;
@@ -264,7 +271,6 @@ article img {
   margin-bottom: 1.5rem;
   padding: 0;
   background: $content-background;
-  font-size: medium;
   overflow: hidden;
 
 }
@@ -272,7 +278,6 @@ article img {
 .widget-title {
   padding: 10px;
   width: 100%;
-  /*font-size: 1.25rem;*/
   font-weight: bold;
 }
 
@@ -280,7 +285,6 @@ article img {
   padding: 1rem;
   counter-reset: section;
   line-height: 2rem;
-  font-size: small;
 }
 
 .widget ul li {
@@ -298,29 +302,27 @@ article img {
   display: inline-block;
   padding: 0 0.5rem;
   line-height: 1.5rem;
-  background: #717070;
-  //color: $content-background;
+  background: $primary;
   border-radius: 0.25rem;
 }
 
 .widget .hot-articles ul li:nth-child(1):before {
-  background: #ff6a00
+  background: $danger
 }
 
 .widget .hot-articles ul li:nth-child(2):before {
-  background: #107db4
+  background: $primary
 }
 
 .widget .hot-articles ul li:nth-child(3):before {
-  background: #56ae11
+  background: $success
 }
 
 .widget post-data {
   float: right;
   overflow: hidden;
-  color: #777777;
+  color: $gray-dark;
 }
-
 
 /* 搜索框开始 */
 .widget_search {
@@ -361,7 +363,7 @@ article img {
 
 .widget_search button:before {
   content: "搜索";
-  color: #F9F0DA;
+  color: $light;
 }
 
 /* 搜索框结束 */

@@ -30,6 +30,14 @@
                 endwhile;
                 wp_reset_query(); ?>
             </section>
+
+            <section class="article-tag">
+                <div class="row">
+                    <div class="col-12">
+                        <?php the_tags(); ?>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="col-4 p-2">
             <section class="sidebar">

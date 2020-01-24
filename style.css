@@ -19,8 +19,8 @@ body {
   position: relative;
   display: block;
   background: #f8f9fa;
-    font-family: '微软雅黑', 'Microsoft Yahei', 'Arial', 'sans-serif';
-  font-size: medium; }
+  font-family: '微软雅黑', 'Microsoft Yahei', 'Arial', 'sans-serif';
+}
 
 img {
   border: none;
@@ -31,7 +31,8 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: #444; }
+  color: #343a40;
+}
 
 a:hover {
   text-decoration: none;
@@ -85,12 +86,12 @@ header {
 /* breadcrumb 样式开始*/
 .breadcrumb {
   width: 100%;
-  margin-bottom: 0;
+  margin: 0.25rem 0;
   padding: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: .25rem;
   background: #fff;
-  font-size: small; }
+}
 
 /* breadcrumb 样式结束*/
 /* article 样式开始 */
@@ -174,6 +175,13 @@ article img {
   line-height: 2rem;
   text-align: left; }
 
+.article-content h2, .article-content h3 {
+  padding: 0.25rem 1rem;
+  border-left: 0.25rem solid #17a2b8;
+  font-weight: bold;
+  background-color: #f8f9fa;
+}
+
 .article-tag {
   height: auto;
   width: 100%;
@@ -191,20 +199,18 @@ article img {
   margin-bottom: 1.5rem;
   padding: 0;
   background: #fff;
-  font-size: medium;
   overflow: hidden; }
 
 .widget-title {
   padding: 10px;
   width: 100%;
-  /*font-size: 1.25rem;*/
   font-weight: bold; }
 
 .widget ul {
   padding: 1rem;
   counter-reset: section;
   line-height: 2rem;
-  font-size: small; }
+}
 
 .widget ul li {
   border-bottom: 1px dotted #ccc;
@@ -219,22 +225,26 @@ article img {
   display: inline-block;
   padding: 0 0.5rem;
   line-height: 1.5rem;
-  background: #717070;
+  background: #007bff;
   border-radius: 0.25rem; }
 
 .widget .hot-articles ul li:nth-child(1):before {
-  background: #ff6a00; }
+  background: #dc3545;
+}
 
 .widget .hot-articles ul li:nth-child(2):before {
-  background: #107db4; }
+  background: #007bff;
+}
 
 .widget .hot-articles ul li:nth-child(3):before {
-  background: #56ae11; }
+  background: #28a745;
+}
 
 .widget post-data {
   float: right;
   overflow: hidden;
-  color: #777777; }
+  color: #343a40;
+}
 
 /* 搜索框开始 */
 .widget_search {
@@ -270,7 +280,8 @@ article img {
 
 .widget_search button:before {
   content: "搜索";
-  color: #F9F0DA; }
+  color: #f8f9fa;
+}
 
 /* 搜索框结束 */
 /* 侧边栏样式结束*/
