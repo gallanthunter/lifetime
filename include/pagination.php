@@ -7,22 +7,23 @@
 function bootstrap_pagination()
 {
     global $paged, $wp_query;
-    $range    = 4;
+    $range    = 5;
     $max_page = $wp_query->max_num_pages;
+    if (is_singular())
+        return;
     if ($max_page == 1)
         return;
     if ($max_page > 1) {
-        echo "<ul class='pagination'>";
-        if (!$paged) {
+        echo "<ul class='pagination justify-content-center'>";
+        if (empty($paged)) {
             $paged = 1;
         }
         if ($paged != 1) {
             echo '<li class="page-item"><a class="page-link"';
             echo " href='" . get_pagenum_link(1) . "' title='跳转到首页'>首页</a></li>";
+            echo '<li class="page-item"><a class="page-link"';
+            echo " href='" . get_pagenum_link($paged - 1) . "'>上一页</a></li>";
         }
-        echo '<li class="page-item">';
-        previous_posts_link('上一页');
-        echo '</li>';
         if ($max_page > $range) {
             if ($paged < $range) {
                 for ($i = 1; $i <= ($range + 1); $i++) {
@@ -62,14 +63,14 @@ function bootstrap_pagination()
                 echo ">$i</a></li>";
             }
         }
-        echo '<li class="page-item">';
-        next_posts_link('下一页');
-        echo '</li>';
+
         if ($paged != $max_page) {
+            echo '<li class="page-item"><a class="page-link"';
+            echo " href='" . get_pagenum_link($paged + 1) . "'>下一页</a></li>";
             echo '<li class="page-item"><a class="page-link"';
             echo " href='" . get_pagenum_link($max_page) . "'  title='跳转到最后一页'>尾页</a></li>";
         }
-        echo '<span>共[' . $max_page . ']页</span>';
+        echo '<li class="page-item disabled"><span class="page-link">共[' . $max_page . ']页</span></li>';
         echo "</ul>\n";
     }
 }
