@@ -12,30 +12,44 @@ Tags:
 */
 
 /* color */
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
 
-$background: #F7F7F7;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
 
-// header color
-$header-background: white;
-$header-border-color: #ECECEC;
-
-// content color
-$content-background: white;
-
-// footer color
-$footer-background: #2b333E;
-$footer-font-color: #777777;
-
-// link color
-$a-link-color: #3498DB;
-$a-hover-color: #3498DB;
-$a-visited-color: #3498DB;
-$a-active-color: #3498DB;
+$background: $light;
+$header-background: $white;
+$header-border-color: rgba(0, 0, 0, .125);
+$content-background: $white;
+$footer-background: $dark;
+$footer-font-color: $light;
+$a-link-color: $primary;
+$a-hover-color: $primary;
+$a-visited-color: $primary;
+$a-active-color: $primary;
 
 
 @media (min-width: 1920px) {
   .container {
-    max-width: 1200px;
+    max-width: 1500px;
   }
 }
 
@@ -121,10 +135,12 @@ header {
 /* wordpress nav 自动生成代码结束 */
 
 /* breadcrumb 样式开始*/
-.crumbs {
+.breadcrumb {
   width: 100%;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
   padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
   background: $content-background;
   font-size: small;
 }
@@ -191,7 +207,6 @@ article img {
 
 .article-more {
   display: inline-block;
-  margin: 0.5rem 0;
   font-size: small;
 }
 
@@ -211,7 +226,7 @@ article img {
   left: 5%;
   line-height: 1.5rem;
   padding: 0 0.5rem;
-  background-color: white;
+  background-color: $white;
 }
 
 .article-excerpt-no-border {

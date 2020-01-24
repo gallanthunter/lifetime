@@ -23,9 +23,8 @@
             <?php get_template_part('template-parts/content/content', 'meta'); ?>
         </div>
         <div class="col-2 article-more">
-            <a href="<?php echo get_option('home') . '/?p=' . $post->ID; ?>"><span>阅读原文</span></a>
+            <a class="btn btn-primary btn-sm" href="<?php echo get_option('home') . '/?p=' . $post->ID; ?>"
+               role="button">阅读原文</a>
         </div>
-
-
     </div>
 </article>
