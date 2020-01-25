@@ -12,14 +12,14 @@
 <div class="container p-0">
     <!-- 面包屑导航 -->
     <div class="row">
-        <div class="col-xl-12">
+        <div class="col-12">
             <?php if (function_exists('get_breadcrumbs'))
                 get_breadcrumbs(); ?>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-xl-9">
+        <div class="col-9">
             <section class="article-list">
                 <?php
                 if (have_posts()) :
@@ -36,7 +36,7 @@
             <!-- 分页 -->
             <?php get_template_part('template-parts/content/content', 'pagination'); ?>
         </div>
-        <div class="col-xl-3">
+        <div class="col-3">
             <section class="sidebar">
                 <?php get_template_part('sidebar'); ?>
 

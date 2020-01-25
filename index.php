@@ -40,7 +40,7 @@
 
         </div>
         <div class="col-4 p-2">
-            <section class="sidebar text-secondary">
+            <section class="sidebar">
                 <?php get_template_part('sidebar'); ?>
 
             </section>

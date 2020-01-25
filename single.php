@@ -14,7 +14,7 @@
                 get_breadcrumbs(); ?>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-8 p-2">
             <section class="article-list">
@@ -30,19 +30,21 @@
                 endwhile;
                 wp_reset_query(); ?>
             </section>
-
-            <section class="article-tag">
+            <!-- 显示文章标签列表-->
+            <section class="article-tags text-decoration-none">
                 <div class="row">
                     <div class="col-12">
-                        <?php the_tags(); ?>
+                        <?php the_tags('<ul><li>', '</li><li>', '</li></ul>');
+                        ?>
                     </div>
                 </div>
             </section>
+
         </div>
         <div class="col-4 p-2">
             <section class="sidebar">
                 <?php get_template_part('sidebar'); ?>
-            
+
             </section>
         </div>
     </div>

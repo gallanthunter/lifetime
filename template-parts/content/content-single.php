@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <div class="col-12 text-secondary text-center">
+        <div class="col-12 text-center">
             <?php get_template_part('template-parts/content/content', 'meta'); ?>
         </div>
         <div class="col-12">
@@ -25,7 +25,7 @@
         </div>
 
         <!--        <div class="col-xl-12">-->
-        <!--            <div class="article-excerpt text-secondary">-->
+        <!--            <div class="article-excerpt">-->
         <!--                <span class="article-excerpt-title">摘要</span>-->
         <!--                <p>-->
         <?php //echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?><!--</p>-->

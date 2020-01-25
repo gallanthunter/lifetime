@@ -19,7 +19,7 @@
                 <?php echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 200, "..."); ?>
             </div>
         </div>
-        <div class="col-10 text-secondary">
+        <div class="col-10">
             <?php get_template_part('template-parts/content/content', 'meta'); ?>
         </div>
         <div class="col-2 article-more">

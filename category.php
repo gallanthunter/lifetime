@@ -20,7 +20,7 @@
         <div class="col-8 p-2">
             <section class="article-list">
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-12">
                         <?php //get_template_part('template-parts/content/content','sticky');?>
                     </div>
                 </div>

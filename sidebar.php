@@ -6,7 +6,7 @@
  */
 ?>
 <div class="row">
-    <div class="col-xl-12">
+    <div class="col-12">
         <?php wp_reset_query();
         if (is_home() || is_front_page()) {
             dynamic_sidebar('全站侧栏');
