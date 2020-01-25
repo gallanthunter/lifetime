@@ -8,12 +8,12 @@
 <?php $category = get_the_category($post->ID); ?>
 <article>
     <div class="row">
-        <div class="col-xl-12">
+        <div class="col-12">
             <div class="article-title font-weight-bold text-center">
                 <a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a>
             </div>
         </div>
-        <div class="col-xl-12 article-meta text-center">
+        <div class="col-12 article-meta text-center">
             <div class="article-author">
                 <span class="oi oi-person" aria-hidden="true"></span>
                 <a target="_blank"
@@ -26,10 +26,10 @@
                 <?php echo get_the_time('Y-m-d'); ?>
             </div>
         </div>
-        <div class="col-xl-12">
+        <div class="col-12">
             <hr>
         </div>
-        <div class="col-xl-12">
+        <div class="col-12">
             <div class="article-content">
                 <p><?php the_content() ?></p>
             </div>
