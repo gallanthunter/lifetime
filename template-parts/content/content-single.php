@@ -10,48 +10,48 @@
 <?php $category = get_the_category($post->ID); ?>
 
 <article>
-    <div class="row">
-        <div class="col-12">
-            <div class="article-title font-weight-bold text-center">
-                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-            </div>
-        </div>
-
-        <div class="col-12 text-center">
-            <?php get_template_part('template-parts/content/content', 'meta'); ?>
-        </div>
-      <!--        <div class="col-12">-->
-      <!--            <hr>-->
-      <!--        </div>-->
-
-      <!--        <div class="col-xl-12">-->
-      <!--            <div class="article-excerpt">-->
-      <!--                <span class="article-excerpt-title">摘要</span>-->
-      <!--                <p>-->
-      <?php //echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?><!--</p>-->
-      <!--            </div>-->
-      <!--        </div>-->
-
-      <div class="col-12">
-        <div class="article-content">
-          <p><?php the_content() ?></p>
-        </div>
-      </div>
-      <!-- 显示文章标签列表-->
-      <div class="col-12">
-        <div class="article-tags">
-          <?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?>
-        </div>
-      </div>
-      <div class="col-12 no-gutters">
-        <div class="alert alert-warning" role="alert">
-          <h2 class="alert-heading">说明</h2>
-          <hr>
-          <p>除特别注明外，本站所有文章均为原创，转载请注明出处!</p>
-          <p>欢迎转载~</p>
-        </div>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="article-title font-weight-bold text-center">
+        <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
       </div>
     </div>
+
+    <div class="col-xl-12 text-center">
+      <?php get_template_part('template-parts/content/content', 'meta'); ?>
+    </div>
+    <!--        <div class="col-xl-12">-->
+    <!--            <hr>-->
+    <!--        </div>-->
+
+    <!--        <div class="col-xl-12">-->
+    <!--            <div class="article-excerpt">-->
+    <!--                <span class="article-excerpt-title">摘要</span>-->
+    <!--                <p>-->
+    <?php //echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', get_the_excerpt($post->ID))), 0, 400, "..."); ?><!--</p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <div class="col-xl-12">
+      <div class="article-content">
+        <p><?php the_content() ?></p>
+      </div>
+    </div>
+    <!-- 显示文章标签列表-->
+    <div class="col-xl-12">
+      <div class="article-tags">
+        <?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?>
+      </div>
+    </div>
+    <div class="col-xl-12 no-gutters">
+      <div class="alert alert-warning" role="alert">
+        <h2 class="alert-heading">说明</h2>
+        <hr>
+        <p>除特别注明外，本站所有文章均为原创，转载请注明出处!</p>
+        <p>欢迎转载~</p>
+      </div>
+    </div>
+  </div>
 
 </article>
 

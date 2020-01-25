@@ -8,9 +8,9 @@
 ?>
 
 <div class="row">
-    <div class="col-12">
-        <nav aria-label="Page navigation">
-            <?php bootstrap_pagination() ?>
+  <div class="col-xl-12">
+    <nav aria-label="Page navigation">
+      <?php bootstrap_pagination() ?>
         </nav>
     </div>
 </div>
