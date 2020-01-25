@@ -393,44 +393,53 @@ article h2, article h2 {
 }
 
 .timeline-item {
-  padding: 3rem 2rem 2rem;
+  // padding 调整文字与圈的位置
+  padding: 1rem 2rem;
   position: relative;
-  color: rgba(0, 0, 0, 0.7);
-  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  //color: rgba(0, 0, 255, 0.7);
+  //调整竖线的颜色
+  border-left: 5px solid rgba(0, 0, 0, 0.3);
   line-height: 1.5rem;
 }
 
-.timeline-item h1 {
-  font-size: larger;
+.timeline-item h2 {
+  font-size: medium;
+  font-weight: bold;
+  color: $secondary;
 }
 
 .timeline-item p {
-  font-size: 1rem;
+  margin: 1rem 0;
+  font-size: medium;
+  color: $secondary;
 }
 
 
 .timeline-item::before {
   content: attr(date-is);
   position: absolute;
-  left: 2em;
-  font-weight: bold;
-  top: 1em;
+  //调整日期在左侧的位置
+  left: -8rem;
+  //top: 5rem;
   display: block;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-weight: 700;
-  font-size: .785rem;
+  font-weight: bold;
+  font-size: medium;
+  color: $success;
 }
 
 .timeline-item::after {
-  width: 10px;
-  height: 10px;
+  //width与height结合border-radius调整圈大小
+  width: 20px;
+  height: 20px;
   display: block;
   top: 1em;
   position: absolute;
-  left: -7px;
-  border-radius: 10px;
+  // 调整圈在线上的位置
+  left: -12px;
+  border-radius: 20px;
   content: '';
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  //border: 2px solid rgba(0, 255, 0, 0.3);
+  border: 3px solid $warning;
   background: $content-background;
 }
 
