@@ -19,11 +19,27 @@ $(document).ready(function () {
         i.removeAttr("title");
       }
     }
-
-    // header_ul_li_a.removeAttribute("title");
   }
 
-  // remove_header_ul_li_a_title();
+  function generate_article_qrcode() {
+    var article_link = $('#title-link').attr('href');
+    if (article_link) {
+      $('#qrcode').qrcode({
+        width: 100,
+        height: 100,
+        foreground: "#ffc107",
+        text: article_link,
+      });
+    } else {
+      $('#qrcode').qrcode({
+        width: 100,
+        height: 100,
+        foreground: "#ffc107",
+        text: 'http://www.jungedushu.com',
+      });
+    }
+  }
 
+  generate_article_qrcode();
 
 });

@@ -35,13 +35,4 @@
 <script src="<?php echo get_template_directory_uri() . '/js/main.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/baidu.js' ?>"></script>
 </body>
-<!-- 生成文章二维码 -->
-<script>
-  jQuery('#qrcode').qrcode({
-    width: 100,
-    height: 100,
-    foreground: "#ffc107",
-    text: "<?php the_permalink() ?>",
-  });
-</script>
 </html>
