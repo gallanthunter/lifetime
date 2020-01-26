@@ -101,7 +101,7 @@ article {
   overflow: hidden;
 }
 
-article h2, article h2 {
+article h2 {
   font-size: medium;
   font-weight: bolder;
 }
@@ -192,7 +192,6 @@ article h2, article h2 {
   height: auto;
   width: 100%;
   margin: 0 -2.5rem;
-  display: inline-block;
 }
 
 .article-tags a {
@@ -200,13 +199,24 @@ article h2, article h2 {
 }
 
 .article-tags li {
-  margin-right: 0.3rem;
+  margin-right: 0.25rem;
   padding: 0.25rem 0.5rem;
   display: inline-block;
-  background: #17a2b8; }
+  background: #17a2b8;
+}
 
 .article-tags li:hover {
-  background: #ffc107; }
+  background: #ffc107;
+}
+
+.article-notice {
+  overflow: hidden;
+}
+
+.article-notice h2 {
+  font-size: medium;
+  font-weight: bold;
+}
 
 /* 侧边栏样式开始*/
 .widget {
@@ -215,7 +225,8 @@ article h2, article h2 {
   margin-bottom: 1.5rem;
   padding: 0;
   background: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .widget-title {
   padding: 1rem;
@@ -351,8 +362,11 @@ article h2, article h2 {
 
 /* 时间轴样式结束*/
 footer {
+  height: auto;
+  width: 100%;
   background: #343a40;
-  color: #f8f9fa; }
+  color: #f8f9fa;
+}
 
 footer a {
   color: #f8f9fa; }

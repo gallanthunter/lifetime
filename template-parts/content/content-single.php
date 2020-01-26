@@ -16,14 +16,9 @@
         <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
       </div>
     </div>
-
     <div class="col-xl-12 text-center">
       <?php get_template_part('template-parts/content/content', 'meta'); ?>
     </div>
-    <!--        <div class="col-xl-12">-->
-    <!--            <hr>-->
-    <!--        </div>-->
-
     <!--        <div class="col-xl-12">-->
     <!--            <div class="article-excerpt">-->
     <!--                <span class="article-excerpt-title">摘要</span>-->
@@ -37,21 +32,22 @@
         <p><?php the_content() ?></p>
       </div>
     </div>
-    <!-- 显示文章标签列表-->
-    <div class="col-xl-12">
-      <div class="article-tags">
-        <?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?>
-      </div>
-    </div>
-    <div class="col-xl-12 no-gutters">
-      <div class="alert alert-warning" role="alert">
-        <h2 class="alert-heading">说明</h2>
-        <hr>
-        <p>除特别注明外，本站所有文章均为原创，转载请注明出处!</p>
-        <p>欢迎转载~</p>
-      </div>
-    </div>
   </div>
-
 </article>
 
+<div class="row">
+  <!-- 显示文章标签列表-->
+  <div class="col-xl-12">
+    <div class="article-tags">
+      <?php the_tags('<ul><li>', '</li><li>', '</li></ul>'); ?>
+    </div>
+  </div>
+  <div class="col-xl-12 article-notice">
+    <div class="alert alert-warning" role="alert">
+      <h2 class="alert-heading">说明</h2>
+      <hr>
+      <p>除特别注明外，本站所有文章均为原创，转载请注明出处! <?php the_permalink() ?></p>
+      <p>欢迎转载~</p>
+    </div>
+  </div>
+</div>

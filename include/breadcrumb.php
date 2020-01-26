@@ -95,5 +95,5 @@ function get_breadcrumbs()
         }
         echo '</div>';
     }
-    
+
 }

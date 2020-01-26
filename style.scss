@@ -65,7 +65,7 @@ img {
   height: auto;
   max-width: 100%;
   border: none;
-  display: block
+  display: block;
 }
 
 a {
@@ -155,7 +155,7 @@ article {
   overflow: hidden;
 }
 
-article h2, article h2 {
+article h2 {
   font-size: medium;
   font-weight: bolder;
 }
@@ -264,7 +264,6 @@ article h2, article h2 {
   height: auto;
   width: 100%;
   margin: 0 -2.5rem;
-  display: inline-block;
 }
 
 .article-tags a {
@@ -272,7 +271,7 @@ article h2, article h2 {
 }
 
 .article-tags li {
-  margin-right: 0.3rem;
+  margin-right: 0.25rem;
   padding: 0.25rem 0.5rem;
   display: inline-block;
   background: $info;
@@ -280,6 +279,15 @@ article h2, article h2 {
 
 .article-tags li:hover {
   background: $warning;
+}
+
+.article-notice {
+  overflow: hidden;
+}
+
+.article-notice h2 {
+  font-size: medium;
+  font-weight: bold;
 }
 
 
@@ -311,7 +319,6 @@ article h2, article h2 {
   white-space: nowrap;
   text-overflow: ellipsis;
   list-style-type: circle;
-
 }
 
 .widget .hot-articles ul li:before {
@@ -451,6 +458,8 @@ article h2, article h2 {
 /* 时间轴样式结束*/
 
 footer {
+  height: auto;
+  width: 100%;
   background: $footer-background;
   color: $footer-font-color;
 }
