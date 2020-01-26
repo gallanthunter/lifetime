@@ -18,13 +18,13 @@
         <span class="oi oi-person" aria-hidden="true"></span>
         <a target="_blank"
            href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
-                    <?php echo the_author_nickname(); ?>
-                </a>
-            </div>
-            <div class="article-publish-time">
-                <span class="oi oi-clock" aria-hidden="true"></span>
-                <?php echo get_the_time('Y-m-d'); ?>
-            </div>
+          <?php echo the_author_nickname(); ?>
+        </a>
+      </div>
+      <div class="article-publish-time">
+        <span class="oi oi-clock" aria-hidden="true"></span>
+        <?php echo get_the_time('Y-m-d'); ?>
+      </div>
     </div>
     <div class="col-xl-12">
       <hr>
@@ -32,7 +32,7 @@
     <div class="col-xl-12">
       <div class="article-content">
         <p><?php the_content() ?></p>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </article>

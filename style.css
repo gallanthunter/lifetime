@@ -30,7 +30,8 @@ img {
 
 a {
   text-decoration: none;
-  color: #343a40; }
+  color: #6c757d;
+}
 
 a:hover {
   text-decoration: none;
@@ -73,8 +74,7 @@ header {
   -o-transition: all 0.8s;
   border-bottom: 3px solid #fff;
   font-size: 1.25rem;
-  /*font-weight: bold;*/
-  color: #343a40; }
+}
 
 .header-menu-items li.current-menu-item, .header-menu-items li:hover {
   color: #007bff;
@@ -92,9 +92,9 @@ header {
 
 /* breadcrumb 样式结束*/
 /* article 样式开始 */
-/* article 样式开始 */
 article {
   height: auto;
+  width: 100%;
   margin-bottom: 0.5rem;
   background: #fff;
   text-align: left;
@@ -311,10 +311,8 @@ article h2 {
 /* 搜索框结束 */
 /* 侧边栏样式结束*/
 /* 时间轴样式开始 */
-.timeline {
-  margin: 0 10rem; }
-
 .timeline-item {
+  margin: 0 15rem;
   padding: 1rem 2rem;
   position: relative;
   border-left: 5px solid rgba(0, 0, 0, 0.3);

@@ -41,7 +41,7 @@ $header-border-color: rgba(0, 0, 0, .125);
 $content-background: $white;
 $footer-background: $dark;
 $footer-font-color: $light;
-$a-link-color: $dark;
+$a-link-color: $secondary;
 $a-hover-color: $primary;
 $a-visited-color: $primary;
 $a-active-color: $primary;
@@ -121,8 +121,6 @@ header {
   -o-transition: all 0.8s;
   border-bottom: 3px solid $content-background;
   font-size: 1.25rem;
-  /*font-weight: bold;*/
-  color: $dark;
 }
 
 .header-menu-items li.current-menu-item, .header-menu-items li:hover {
@@ -145,10 +143,9 @@ header {
 /* breadcrumb 样式结束*/
 
 /* article 样式开始 */
-
-/* article 样式开始 */
 article {
   height: auto;
+  width: 100%;
   margin-bottom: 0.5rem;
   background: $content-background;
   text-align: left;
@@ -396,11 +393,12 @@ article h2 {
 
 /* 时间轴样式开始 */
 .timeline {
-  margin: 0 10rem;
+
 }
 
 .timeline-item {
   // padding 调整文字与圈的位置
+  margin: 0 15rem;
   padding: 1rem 2rem;
   position: relative;
   //color: rgba(0, 0, 255, 0.7);
