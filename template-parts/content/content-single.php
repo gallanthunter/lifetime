@@ -46,8 +46,16 @@
     <div class="alert alert-warning" role="alert">
       <h2 class="alert-heading">说明</h2>
       <hr>
-      <p>除特别注明外，本站所有文章均为原创，转载请注明出处! <?php the_permalink() ?></p>
-      <p>欢迎转载~</p>
+      <div class="row">
+        <div class="col-xl-2">
+          <div id="qrcode"></div>
+        </div>
+        <div class="col-xl-10">
+          <p>除特别注明外，本站所有文章均为原创，转载请注明出处! <?php the_permalink() ?></p>
+          <p>欢迎转载~</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

@@ -6,32 +6,42 @@
  */
 ?>
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 footer-links">
-                <?php wp_nav_menu(array(
-                    'theme_location' => 'footer-menu',
-                    'items_wrap'     => '<ul class="footer-menu-items">%3$s</ul>'
-                )); ?>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-12 footer-copyright">
-                <p>
-                    Copyright &copy; 2019 - <?php echo date("Y") ?> <?php echo ' ' . bloginfo('name') . ' 版权所有'; ?>
-                    <a rel="nofollow" target="_blank" href="http://www.miibeian.gov.cn/">粤ICP备19061878号</a>
-                </p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 footer-links">
+        <?php wp_nav_menu(array(
+          'theme_location' => 'footer-menu',
+          'items_wrap'     => '<ul class="footer-menu-items">%3$s</ul>'
+        )); ?>
+      </div>
     </div>
-    <?php wp_footer(); ?>
+    <div class="row">
+      <div class="col-xl-12 footer-copyright">
+        <p>
+          Copyright &copy; 2019 - <?php echo date("Y") ?> <?php echo ' ' . bloginfo('name') . ' 版权所有'; ?>
+          <a rel="nofollow" target="_blank" href="http://www.miibeian.gov.cn/">粤ICP备19061878号</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <?php wp_footer(); ?>
 </footer>
 
 <script src="<?php echo get_template_directory_uri() . '/js/vendor/modernizr-3.7.1.min.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/vendor/jquery-3.4.0.min.js' ?>"></script>
+<script src="<?php echo get_template_directory_uri() . '/js/vendor/jquery.qrcode.min.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/vendor/bootstrap.min.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/plugins.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/main.js' ?>"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/baidu.js' ?>"></script>
 </body>
+<!-- 生成文章二维码 -->
+<script>
+  jQuery('#qrcode').qrcode({
+    width: 100,
+    height: 100,
+    foreground: "#ffc107",
+    text: "<?php the_permalink() ?>",
+  });
+</script>
 </html>
