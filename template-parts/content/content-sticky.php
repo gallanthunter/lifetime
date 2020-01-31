@@ -28,19 +28,19 @@ if ($sticky) { ?>
                 <?php }
                 thumbnails("case_full"); ?>
             </a>
-            <strong class="sticky_title" title=" <?php the_title(); ?>"><a target="_blank"
-                                                                           href="<?php the_permalink() ?>"> <?php the_title(); ?></a></strong>
-            <a href="<?php echo get_category_link($category[0]->term_id) ?>" class="cat">
-                <?php echo $category[0]->name; ?> /
-                <?php echo $category[0]->slug; ?>
+          <strong class="sticky_title" title=" <?php the_title(); ?>"><a target="_blank"
+                                                                         href="<?php the_permalink() ?>"> <?php the_title(); ?></a></strong>
+          <a href="<?php echo get_category_link($category[0]->term_id) ?>" class="cat">
+            <?php echo $category[0]->name; ?> /
+            <?php echo $category[0]->slug; ?>
+          </a>
+          <div class="author">
+            <a target="_blank" href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
+              <?php the_author_meta(nickname); ?>
             </a>
-            <div class="author">
-                <a target="_blank" href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
-                    <?php the_author_nickname(); ?>
-                </a>
-                写在
-                <?php echo get_the_time('Y年M月D日'); ?>
-            </div>
+            写在
+            <?php echo get_the_time('Y年M月D日'); ?>
+          </div>
         </li>
     <?php endwhile;
     wp_reset_query(); ?>

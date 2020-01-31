@@ -18,7 +18,7 @@
         <span class="oi oi-person" aria-hidden="true"></span>
         <a target="_blank"
            href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
-          <?php echo the_author_nickname(); ?>
+          <?php echo the_author_meta(nickname); ?>
         </a>
       </div>
       <div class="article-publish-time">
