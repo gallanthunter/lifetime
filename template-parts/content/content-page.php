@@ -31,7 +31,7 @@
     </div>
     <div class="col-xl-12">
       <div class="article-content">
-        <p><?php the_content() ?></p>
+        <?php the_content() ?>
       </div>
     </div>
   </div>

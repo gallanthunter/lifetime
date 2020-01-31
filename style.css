@@ -185,7 +185,7 @@ article h2 {
 }
 
 .article-content ul li {
-  list-style: circle;
+  list-style-type: toggle(circle, lower-alpha, lower-roman);
 }
 
 .article-tags {

@@ -18,30 +18,20 @@
   <div class="row">
     <div class="col-xl-12">
       <section class="about">
-        <!-- Bottom to top -->
-        <div class="row">
-          <div class="col-xl-6">
-
-            <!-- colored -->
-            <div class="ih-item circle colored effect17"><a href="#">
-                <div class="img"><img src="images/assets/5.jpg" alt="img"></div>
-                <div class="info">
-                  <h3>我是谁</h3>
-                  <p>Description goes here</p>
-                </div>
-              </a></div>
-            <!-- end colored -->
-
-          </div>
-          <div class="col-xl-6">
-            <h3>我是谁</h3>
-            <p>
-
-            </p>
-
-          </div>
-        </div>
-        <!-- end Bottom to top -->
+        <article>
+          <!-- Bottom to top -->
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="ih-item circle colored effect17"><a href="#">
+                  <div class="img"><img src="images/assets/5.jpg" alt="img"></div>
+                  <div class="info">
+                    <h3>我是谁</h3>
+                    <p>Description goes here</p>
+                  </div>
+                </a></div>
+            </div>
+            <!-- end Bottom to top -->
+        </article>
       </section>
     </div>
   </div>
