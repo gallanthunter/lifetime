@@ -18,7 +18,7 @@
   <div class="article-author">
     <span class="oi oi-person" aria-hidden="true"></span>
     <a href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
-      <?php echo the_author_meta(nickname); ?>
+      <?php echo the_author_meta('nickname'); ?>
     </a>
   </div>
 

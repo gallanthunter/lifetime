@@ -36,7 +36,7 @@ if ($sticky) { ?>
           </a>
           <div class="author">
             <a target="_blank" href="<?php echo get_author_posts_url(get_the_author_ID()); ?>">
-              <?php the_author_meta(nickname); ?>
+              <?php the_author_meta('nickname'); ?>
             </a>
             写在
             <?php echo get_the_time('Y年M月D日'); ?>
